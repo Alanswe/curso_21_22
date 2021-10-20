@@ -1,0 +1,1 @@
+#crea con una lista de 9 nombres, equipos de 2 personas 
