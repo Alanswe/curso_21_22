@@ -14,10 +14,18 @@ cols = 15
 filas = 15
 matriz = []
 
-for i in range(filas):
-    fila = []
-    for j in range(cols):
-        fila.append('X')
-    matriz.append(fila)
+# for i in range(filas):
+#     fila = []
+#     for j in range(cols):
+#         fila.append(f"{i}-{j}")
+#     matriz.append(fila)
 
-pprint.pprint(matriz)
+# pprint.pprint(matriz)
+
+#print[matriz[5][6]]
+
+for i in range(filas):
+    linea = ''
+    for j in range(cols):
+        linea += matriz[i][j]
+    print(linea)
