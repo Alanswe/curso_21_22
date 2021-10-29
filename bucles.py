@@ -1,3 +1,4 @@
+#                                           Range es un rango entre ()
 #for i in range(5,20,3) :
 #    print(f'Hola mundo {i}')
 
