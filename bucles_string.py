@@ -1,10 +1,10 @@
-
+#
 # for i in range(len(cadena)):
 #     print(cadena[i].upper())
 
 # #print(cadena[9])
 
-# print('prueba abajo')
+# print('prueba abajo')                #Para separar 
 
 # for x in cadena:
 #     print(x.upper())
@@ -16,7 +16,7 @@ inversa = ''
 
 for x in cadena:
     #if x == ' ':
-    #    break  #si x es igual a ' '(espacio), para y la haca hasta ahí incluso las siguiemntes si tienen el espacio.
+    #    break  #si x es igual a ' '(espacio), para y la haga hasta ahí incluso las siguiemntes si tienen el espacio.
     salida += x.upper()
     inversa = x.upper() + inversa
 print(salida)
