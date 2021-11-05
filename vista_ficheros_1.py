@@ -12,7 +12,7 @@ carpeta = 'RUTA_BASE + CODIGO'
 carpeta = os.scandir()                               #Escanea la carpeta y muestra los archivos 
 for f in carpeta:
         if f.name.endswith('.py'):
-                list_carpeta.append(f.name[:-3:])    #-3 para no motrar los .py
+                list_carpeta.append(f.name[:-3:])    #-3 para no mostrar los .py ultimos
 
 #                                2 sacar nombres de carpeta de 5 en 5 en una lista
 for x in range(0, len(list_carpeta),miebros):
@@ -23,3 +23,11 @@ for x in range(0, len(list_carpeta),miebros):
 nuevo = open(RUTA_SALIDA + '/nombres_dir.txt', 'w')
 nuevo.write(fila)
 nuevo.close()
+
+#                                'extra' version con lineas de una en una (sustituye el punto 2 y 3)
+#nuevo = open(RUTA_SALIDA + '/nombres_dir.txt', 'w')
+# for x in range(0, len(list_carpeta),miebros):
+#         temp = list_carpeta[x: x + miebros]
+#         fila = ','.join(temp) + '\n'
+#nuevo.write(fila)
+#nuevo.close()
