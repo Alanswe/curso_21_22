@@ -16,4 +16,17 @@ with open(ruta) as archivo:
             dic_salida[clave] = nombre
             clave += 1
 
-pprint(dic_salida)
+#pprint(dic_salida)
+
+
+def modo2():
+    clave = 0
+    texto = open(ruta,'r').readlines()
+    for archivo in texto:
+        dic_salida[clave] = archivo[:-1:]
+        clave += 1
+    
+    return dic_salida
+
+
+pprint(modo2())
