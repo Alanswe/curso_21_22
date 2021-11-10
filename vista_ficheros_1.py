@@ -20,8 +20,8 @@ for x in range(0, len(list_carpeta),miebros):
         fila += ','.join(temp) + '\n'
 
 #                                 3 crear y escribir
-nuevo = open(RUTA_SALIDA + '/nombres_dir.txt', 'w')
-nuevo.write(fila)
+nuevo = open(RUTA_SALIDA + '/nombres_dir.txt', 'w') #con W se borra el contenido del archivo antes de escribir
+nuevo.write(fila[:-1:])
 nuevo.close()
 
 #                                'extra' version con lineas de una en una (sustituye el punto 2 y 3)
