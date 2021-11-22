@@ -19,7 +19,8 @@ def survivior_male_sex():
     for person in leer_archivo():
         if person['Survived'] == '1' and person['Sex'] == 'male':
             male_l += 1
-        if person['Survived'] == '0' and person['Sex'] == 'male':            male_d += 1
+        if person['Survived'] == '0' and person['Sex'] == 'male':            
+            male_d += 1
     return(f'Male survivors: {male_l}', f'and deads: {male_d}')
 
 # 3 - Determinar Mujeres

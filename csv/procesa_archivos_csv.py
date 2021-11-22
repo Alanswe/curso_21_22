@@ -52,9 +52,7 @@ def leer_with():
 def leer_dict():
     csv_in = open(ruta_completa + 'archivos.csv')
     lector_dict = csv.DictReader(csv_in)
-
     list_dict = list(lector_dict)
-
     csv_in.close
     return list_dict
 
