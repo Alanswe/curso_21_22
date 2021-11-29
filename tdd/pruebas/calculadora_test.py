@@ -39,6 +39,6 @@ class CalculadoraTest(unittest.TestCase):
             respuesta = calculadora.sumar("//;\n1;2")
             self.assertEqual(respuesta,3)
 
-    # def test_valores_negativos_producen_error(self):
-    #         respuesta = calculadora.sumar("3,-6,15,-18,46,33")
-    #         self.assertEqual(respuesta,'Error: No admite números negativos')
+    def test_valores_negativos_producen_error(self):
+            respuesta = calculadora.sumar("3,-6,15,-18,46,33")
+            self.assertEqual(respuesta,'Error: No admite números negativos')
