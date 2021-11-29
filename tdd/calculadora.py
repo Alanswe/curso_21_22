@@ -36,6 +36,7 @@ def cadena_vacia_devuelve_cero():
 
 def un_numero_devuelve_el_numero():
     return sumar('1')
+
 def un_caracter_devuelve_el_numero():
     return sumar('a')
 
