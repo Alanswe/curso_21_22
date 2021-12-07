@@ -1,38 +1,107 @@
-# Vamos a crear una clase llamada Persona. 
-# Sus atributos son: nombre, edad y DNI. 
-# Construye los siguientes métodos para la clase:
-# Un constructor, donde los datos pueden estar vacíos.
-# Los setters y getters para cada uno de los atributos. 
-# Hay que validar las entradas de datos.
-# mostrar(): Muestra los datos de la persona.
-# esMayorDeEdad(): Devuelve un valor lógico indicando si es mayor de edad.
+#                         Ejercicio 1 de OOP Alan Sweere
 
+# 1 - Vamos a crear una clase llamada Persona. 
+# 1 - 0 - Sus atributos son: nombre, edad y DNI. 
+# 2 - Construye los siguientes métodos para la clase:
+# 2 - 0 - Un constructor, donde los datos pueden estar vacíos.
+# 2 - 1 - Los setters y getters para cada uno de los atributos. 
+# 2 - 2 - Hay que validar las entradas de datos.
+# 2 - 3 - mostrar(): Muestra los datos de la persona.
+# 2 - 4 - esMayorDeEdad(): Devuelve un valor lógico indicando si es mayor de edad.
 
+# 1 - Vamos a crear una clase llamada Persona. 
 class Persona():
-    # Constructor con datos vacios
+    
+    # 1 - 0 - Sus atributos son: nombre, edad y DNI.
 
-    def __init__(self, edad, nombre, DNI) -> None:
+    nombre = None
+    edad = 0
+    DNI = None
+
+    # 2 - Construye los siguientes métodos para la clase:
+    # 2 - 0 - Un constructor, donde los datos pueden estar vacíos.
+
+    def __init__(self, nombre, edad, DNI) -> None:
         self.edad = edad
         self.nombre = nombre
         self.DNI = DNI
 
-    # Los setters y getters para cada uno de los atributos. 
+    # 2 - 1 - Los setters y getters para cada uno de los atributos.
     
-    def edad(self, e):
-        if e < 18: 
-            return 'Lo siento, no eres mayor de edad'
-        else:
-            return self.edad
+    # Los getters
 
-    def nombre(self, n):
+    def get_nombre(self):
+        return self.nombre
+    
+    def get_edad(self):
+        return self.edad
+
+    def get_DNI(self):
+        return self.DNI
+    
+    # Los setters (Se puede hacer en una solo def set_all(self, a, b, c) para cambiar todos a la vez)
+
+    def set_nombre(self, b):
+        self.nombre = b
         return self.nombre
 
-    def dni(self, d):
-        return self.dni
+    def set_edad(self, a):
+        self.edad = a
+        return self.edad
 
-pepe = Persona().edad(15)
+    def set_DNI(self, c):
+        self.DNI = c
+        return self.DNI
+ 
+    # 2 - 2 - Hay que validar las entradas de datos.
+    
+    def validar_nombre(self):
+        if self.nombre != str:
+            print('Error: El valor introducido es incorrecto')
+    
+    def validar_edad(self):
+        if self.edad != int:
+            print('Error: El valor no es un entero')
 
-juan = Persona().edad(19)
+    def validar_DNI(self):
+        if self.DNI != str:
+            print('Error: El valor introducido es incorrecto')
+    
+    # 2 - 3 - mostrar(): Muestra los datos de la persona.(Se puede hacer con return)
+    def mostrar(self):
+        print(self.edad, self.nombre, self.DNI)
 
-print(pepe)
-print(juan)
+    # 2 - 4 - esMayorDeEdad(): Devuelve un valor lógico indicando si es mayor de edad.
+    def esMayorDeEdad(self) -> int:
+        if self.edad < 18: 
+            #print('Lo siento', self.nombre, ', no eres mayor de edad') # Opcional pero no requerido
+            return False 
+        else:
+            return True
+
+# Usuarios de ejemplo para las pruebas
+usuario_1 = Persona('Pepe', 15, '44566633D')
+usuario_2 = Persona('Raúl', 19, '20049930')
+
+# Pruebas
+print('Probamos a cambiar a un valor erroneo...')
+usuario_1.set_nombre(544)
+usuario_1.set_edad('Hola')
+print('Ahora el tipo es', type(usuario_1.nombre), 'y esperaba str...')
+usuario_1.validar_nombre()
+print('Ahora el tipo es', type(usuario_1.edad), 'y esperaba int...')
+usuario_1.validar_edad()
+print('Restablecemos el error...')
+usuario_1.set_nombre('Pepe')
+usuario_1.set_edad(15)
+print('----------------------------')
+print('Probamos el get: ', usuario_1.get_edad())
+print('Antes de llamar al set: ', usuario_1.nombre)
+usuario_1.set_nombre('Fernado')
+print('Después: ', usuario_1.nombre)
+print('----------------------------')
+usuario_1.mostrar()
+usuario_2.mostrar()
+print('----------------------------')
+print(usuario_1.esMayorDeEdad())
+print(usuario_2.esMayorDeEdad())
