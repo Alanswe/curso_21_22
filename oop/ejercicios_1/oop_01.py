@@ -69,7 +69,8 @@ class Persona():
     
     # 2 - 3 - mostrar(): Muestra los datos de la persona.(Se puede hacer con return)
     def mostrar(self):
-        print(self.edad, self.nombre, self.DNI)
+        print('Nombre: ', self.nombre, ', Edad: ', self.edad, ', DNI: ', self.DNI)
+        #return 'Nombre: ', self.nombre, ', Edad: ', self.edad, ', DNI: ', self.DNI
 
     # 2 - 4 - esMayorDeEdad(): Devuelve un valor lógico indicando si es mayor de edad.
     def esMayorDeEdad(self) -> int:
@@ -83,8 +84,9 @@ class Persona():
 usuario_1 = Persona('Pepe', 15, '44566633D')
 usuario_2 = Persona('Raúl', 19, '20049930')
 
-# Pruebas
-print('Probamos a cambiar a un valor erroneo...')
+# Pruebas --------------------------------------------------------------------
+
+print('Probamos cambiar a un valor erroneo...')
 usuario_1.set_nombre(544)
 usuario_1.set_edad('Hola')
 print('Ahora el tipo es', type(usuario_1.nombre), 'y esperaba str...')
@@ -101,6 +103,7 @@ usuario_1.set_nombre('Fernado')
 print('Después: ', usuario_1.nombre)
 print('----------------------------')
 usuario_1.mostrar()
+#print(usuario_1.mostrar())
 usuario_2.mostrar()
 print('----------------------------')
 print(usuario_1.esMayorDeEdad())

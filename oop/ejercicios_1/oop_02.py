@@ -72,7 +72,8 @@ class Cuenta():
     # 4 mostrar(): Muestra los datos de la cuenta.
 
     def mostrar(self):
-        return ('Titular: ', self.titular, 'Cantidad: ', self.cantidad)
+        print('Titular: ', self.titular, ', Cantidad: ', self.cantidad)
+        #return ('Titular: ', self.titular, ', Cantidad: ', self.cantidad)
 
 # Cuentas de prueba
 
@@ -82,21 +83,22 @@ cuenta_02 = Cuenta('Manolo')
 
 # Pruebas-----------------------
 print('Prueba opcional:', cuenta_02.mostrar())
-print(cuenta_01.get_titular())
+print('Llamar a get: ', cuenta_01.get_titular())
 print('----------Prueba Set--------------------')
+print('Antes de llamar al set: ', cuenta_01.titular)
 cuenta_01.set_titular('Jose')
-print(cuenta_01.get_titular())
-cuenta_01.set_titular('Pepe')
+print('Después: ', cuenta_01.titular)
 print('--------------ingreso--------------------------')
 cuenta_01.ingresar(-100)
-print(cuenta_01.cantidad)
+print('Comprobación: ', cuenta_01.cantidad)
 print('----------------retiro------------------------')
 cuenta_01.retirar(100)
-print(cuenta_01.cantidad)
+print('Después de retirar 100: ', cuenta_01.cantidad)
 cuenta_01.retirar(-100)
-print(cuenta_01.cantidad)
+print('Comprobación: ', cuenta_01.cantidad)
 print('-------------------numero rojos---------------------')
 cuenta_01.retirar(600)
-print(cuenta_01.cantidad)
+print('Después de retirar 600 en rojo: ', cuenta_01.cantidad)
 print('-------------------mostrar---------------------')
-print(cuenta_01.mostrar())
+cuenta_01.mostrar()
+#print(cuenta_01.mostrar())
