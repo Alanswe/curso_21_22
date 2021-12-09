@@ -72,8 +72,7 @@ class Cuenta():
     # 4 mostrar(): Muestra los datos de la cuenta.
 
     def mostrar(self):
-        print('Titular: ', self.titular, ', Cantidad: ', self.cantidad)
-        #return ('Titular: ', self.titular, ', Cantidad: ', self.cantidad)
+        return f'Titular: {self.titular}, Cantidad: {self.cantidad}'
 
 # Cuentas de prueba
 
@@ -82,6 +81,7 @@ cuenta_01 = Cuenta('Pepe', 500)
 cuenta_02 = Cuenta('Manolo')
 
 # Pruebas-----------------------
+
 print('Prueba opcional:', cuenta_02.mostrar())
 print('Llamar a get: ', cuenta_01.get_titular())
 print('----------Prueba Set--------------------')
@@ -100,5 +100,4 @@ print('-------------------numero rojos---------------------')
 cuenta_01.retirar(600)
 print('Después de retirar 600 en rojo: ', cuenta_01.cantidad)
 print('-------------------mostrar---------------------')
-cuenta_01.mostrar()
-#print(cuenta_01.mostrar())
+print(cuenta_01.mostrar())

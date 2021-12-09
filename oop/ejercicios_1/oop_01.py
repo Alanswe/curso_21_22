@@ -17,7 +17,7 @@ class Persona():
     nombre = None
     edad = 0
     DNI = None
-
+                # 1* Son atributos de la clase
     # 2 - Construye los siguientes métodos para la clase:
     # 2 - 0 - Un constructor, donde los datos pueden estar vacíos.
 
@@ -26,6 +26,7 @@ class Persona():
         self.nombre = nombre
         self.DNI = DNI
 
+                # *2 Son atributos del objeto
     # 2 - 1 - Los setters y getters para cada uno de los atributos.
     
     # Los getters
@@ -69,8 +70,7 @@ class Persona():
     
     # 2 - 3 - mostrar(): Muestra los datos de la persona.(Se puede hacer con return)
     def mostrar(self):
-        print('Nombre: ', self.nombre, ', Edad: ', self.edad, ', DNI: ', self.DNI)
-        #return 'Nombre: ', self.nombre, ', Edad: ', self.edad, ', DNI: ', self.DNI
+        return f'Nombre: {self.nombre}, Edad: {self.edad}, DNI: {self.DNI}'
 
     # 2 - 4 - esMayorDeEdad(): Devuelve un valor lógico indicando si es mayor de edad.
     def esMayorDeEdad(self):
@@ -102,8 +102,7 @@ print('Antes de llamar al set: ', usuario_1.nombre)
 usuario_1.set_nombre('Fernado')
 print('Después: ', usuario_1.nombre)
 print('----------------------------')
-usuario_1.mostrar()
-#print(usuario_1.mostrar())
+print(usuario_1.mostrar())
 usuario_2.mostrar()
 print('----------------------------')
 print(usuario_1.esMayorDeEdad())
