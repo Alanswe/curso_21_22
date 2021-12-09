@@ -73,7 +73,7 @@ class Persona():
         #return 'Nombre: ', self.nombre, ', Edad: ', self.edad, ', DNI: ', self.DNI
 
     # 2 - 4 - esMayorDeEdad(): Devuelve un valor lógico indicando si es mayor de edad.
-    def esMayorDeEdad(self) -> int:
+    def esMayorDeEdad(self):
         if self.edad < 18: 
             #print('Lo siento', self.nombre, ', no eres mayor de edad') # Opcional pero no requerido
             return False 
