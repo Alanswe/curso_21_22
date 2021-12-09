@@ -1,4 +1,4 @@
-#                         Ejercicio 1 de OOP Alan Sweere
+#                        Ejercicio 1 de OOP Alan Sweere
 
 # 1 - Vamos a crear una clase llamada Persona. 
 # 1 - 0 - Sus atributos son: nombre, edad y DNI. 
