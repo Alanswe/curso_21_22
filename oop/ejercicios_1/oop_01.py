@@ -17,7 +17,7 @@ class Persona():
     nombre = None
     edad = 0
     DNI = None
-                # Son de la clase
+                # 1* Son atributos de la clase
     # 2 - Construye los siguientes métodos para la clase:
     # 2 - 0 - Un constructor, donde los datos pueden estar vacíos.
 
@@ -26,7 +26,7 @@ class Persona():
         self.nombre = nombre
         self.DNI = DNI
 
-                # *2 son del objeto
+                # *2 Son atributos del objeto
     # 2 - 1 - Los setters y getters para cada uno de los atributos.
     
     # Los getters
