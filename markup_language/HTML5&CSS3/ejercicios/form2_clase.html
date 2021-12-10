@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post" action="pagina">
+        <fieldset>
+            <legend>Por favor, complete estas opciones</legend>
+            <div>
+                Fecha <input type="date" id="fecha">
+            </div>
+
+            <form id="b" action="procesando.php" name="form" method="post" enctype="multipart/form-data">
+
+                <div>Seleccionar archivo: <input type="file" id="archivo" size="40"></div>
+
+                <div>
+                    <input type="checkbox" name="prorietario" value="JPG">JPG
+                    <input type="checkbox" name="libre" value="PNG">PNG
+                </div>
+
+                <div>Elija Color <input type="color" id="color"></div>
+
+                <div>
+                    <label for="Instituto">intitiuto</label>
+                    <input type="text" name="Instituto" id="Instituto">
+                </div>
+
+                <div>
+                    <label for="Estudios">Estudios</label>
+                    <input type="text" name="Estudios" id="Estudios">
+                </div>
+
+                <p></p>
+
+                <div>
+                    <textarea id="texto" maxlength="100"
+                    placeholder="Inserte aquí el texto"></textarea>
+                </div>
+
+                <div>Elija Hora <input type="time" id="tiempo"></div>
+                <div>
+    
+                    <label for="tecnologia"></label>
+                    <select id="tecnologia" multiple>
+                        <option value="Tarjeta aceleradora">Tarjeta aceleradora</option>
+                        <option value="Monitor LED">Monitor LED</option>
+                        <option value="SSD">SSD</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+        </fieldset>
+    </form>
+</body>
+
+</html>

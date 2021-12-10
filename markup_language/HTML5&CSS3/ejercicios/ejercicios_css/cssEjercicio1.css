@@ -1,0 +1,42 @@
+body main {
+    border: 1px solid #000;
+    padding:1px;
+    margin: 1px;
+    height: 125px;
+    width: 1050px;
+
+    background: linear-gradient(grey, white); 
+}
+
+/*Para encuadrar*/
+p {
+    margin-top: 0px;
+}
+
+/*Para la primera letra en capital*/
+p::first-letter { 
+	font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 200%;
+    color: black;
+}
+
+p strong {
+    color: chocolate;
+}
+
+/*caja de color chocolate y borde 1*/
+p strong span {
+	border:1px solid chocolate;
+}
+
+/*Poner en mayús*/
+p mark {
+    text-transform: uppercase
+}
+
+/* Cambiamos el tamaño del span dentro del p*/
+/* p>span para pillar el hijo directo sin contar con el que está
+ dentro de strong que esta dentro de p*/
+p>span {
+	font-size: 200%
+}

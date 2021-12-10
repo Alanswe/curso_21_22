@@ -1,0 +1,19 @@
+div {   
+	width: 400px;
+	height:400px;
+	background-image: url('/home/alan/Desktop/LM/02LM/imagenes/malpica2.jpg');
+	background-size: cover;
+    z-index:1;
+}
+
+.zoom-in {cursor: zoom-in;}     
+
+div:hover {
+	width: 400px;
+	height:400px;
+	background-image: url('/home/alan/Desktop/LM/02LM/imagenes/vias.jpg');
+	background-size: cover;
+    z-index: -1;
+    cursor: zoom-in;
+}
+

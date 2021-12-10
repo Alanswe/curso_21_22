@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <form action="nombre" method="post">
+        <DIV>Nombre: <input type="text" name="nombre"></DIV>
+        <p></p>
+        <DIV>Apellidos: <input type="text" name="apellidos"></DIV>
+        <p></p>
+        <label for="sexo">Sexo: </label>
+        <input type="radio" name="sexo" value="mañana">Hombre
+        <input type="radio" name="sexo" value="tarde" checked>Mujer
+        <p></p>
+		<label for="correo">Correo: </label>
+		<input type="email" name="correo" id="email">
+        <p></p>
+        <label for="poblacion">Población: </label>
+		<select id="ciudades" >
+			<option value="alicante">Alicante</option>
+			<option value="sevilla" >Sevilla</option>
+			<option value="madrid">Madrid</option>
+			<option value="huelva">Huelva</option>
+		</select>
+        <p></p>
+        <div><label for="descripcion">Descripción: </label>
+		<textarea id="descripcion" maxlength="500"
+		placeholder=""></textarea></div>
+        <p></p>
+        <div><input type="checkbox" name="info" value="novedades">Deseo recibir infomación sobre novedades y ofertas.</div>
+        <p></p>
+        <div><input type="checkbox" name="info" value="acuerdo">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos.</div>
+        <p></p>
+    </form>
+    <input type="submit" value="Enviar">
+</body>
+</html>

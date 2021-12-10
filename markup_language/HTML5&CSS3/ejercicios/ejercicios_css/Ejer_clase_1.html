@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de clase</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .contenedor_izquierda{   
+            position: absolute;
+            left: 700px;
+            top:20px;
+            padding:10px;
+        }
+
+        .contenedor_derecha{   
+            position: absolute;
+            left: 200px;
+            top:20px;
+            padding:10px;
+            width: 200px;
+            height: 150px;
+        }
+
+        .imagen_oculta {
+            position: absolute;
+            left: 20px;
+            top: 30px;	
+            color: #1dacc8;
+            font-weight:blond;
+            text-align:center;
+            font-size:6em;
+            display:none; /* visibility: hidden;*/
+        }
+        
+        #fotoarriba {
+            position: absolute;
+            left: 20px;
+            top: 30px;	
+        }
+        #fotoabajo {
+            position: absolute;
+            left: 20px;
+            top: 30px;	
+            display:none;
+        }
+        .contenedor_derecha:hover #fotoarriba {
+            display:none;
+        }
+
+        .contenedor_derecha:hover #fotoabajo {
+            display:block;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <head>
+        <h1>Titulo h1</h1>
+    </head>
+    <main>
+        <article class="contenedor_izquierda">
+    	<picture id="img1" src="imagenes/fotoplaya.png">
+        </article>
+
+        <article class="contenedor_derecha">
+            <img id="fotoarriba" src="imagenes/fotoplaya.png">
+            <img id="fotoabajo" src="imagenes/herram1.jpg">
+        </article>
+    </main>
+
+</body>
+</html>

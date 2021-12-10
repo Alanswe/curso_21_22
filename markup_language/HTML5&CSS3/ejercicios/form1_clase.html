@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="pagina">
+        <fieldset>
+            <legend>Por favor, complete estas opciones</legend> 
+            <label for="tecnologia"></label>
+            <select id="tecnologia">
+                <option value="KDE">KDE</option>
+                <option value="GNOME">GNOME</option>
+                <option value="Unity">Unity</option>
+            </select>
+            
+                <div>
+                    <textarea id="comentarios" maxlength="100"
+                    placeholder="Escriba aquí, por favor..."></textarea>
+                </div>
+
+                <div>Elija Color <input type="color" id="color"></div>
+                <div>Elija Hora <input type="time" id="tiempo"></div>
+            
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer"> 
+    </form>
+</body>
+</html>
+
+<!-- emmet -->
+<!-- form>(fieldset>legend+div>(label+selector>option*3)
++div>(label+textarea)+divZ(label+imput)+div>(label+imput))+imput+imput -->
