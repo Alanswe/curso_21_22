@@ -1,0 +1,52 @@
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.bloque {
+    display:block;
+}
+.relativo {
+    position: relative;
+    top:0px; /*desplazamiento */
+    left:500px;
+}
+.absoluto {
+    position: absolute;
+    top:200px;
+    left:500px;
+}
+
+#primeraIMG {
+    position:absolute;
+    top:50px;
+    right:200px;
+}
+
+#segundaIMG {
+    position:absolute;
+    top:50px;
+    right:150px;
+}
+
+#terceraIMG {
+    position:absolute;
+    top:50px;
+    right:90px;
+}
+
+#primeraIMG:hover, #segundaIMG:hover, #terceraIMG:hover {
+    z-index:10;
+    width:200px;
+    height: 200px;
+    top:100px;
+    right:100px;
+}
+
+footer {
+    width: 100%;
+    position:fixed;
+    bottom:0;
+text-align:center;
+    background-color:white;
+}
