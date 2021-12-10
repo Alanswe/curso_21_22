@@ -1,0 +1,31 @@
+table {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+table, tr, th, td {
+    border: 1px solid red;
+    line-height: 2em;
+}
+th {
+    background-color: silver;
+    padding: 0 .5em;
+}
+td {
+    padding: 0.9em;
+    text-align: right;
+}
+
+/*---------------------*/
+
+TR:hover {
+    background: yellow;
+}
+
+TH.sube {
+    background-color: white;
+    background-image: url(imagenes/sube.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: 4px;
+    padding: 0 .3em,;
+}
