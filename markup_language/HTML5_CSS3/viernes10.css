@@ -1,0 +1,57 @@
+
+body {
+  background-color:pink;
+  background-image:url("imagenes/donaldtransparente.png"), url("imagenes/donaldtransparente.png");
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-position:left center, right center;
+
+
+}
+table {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  border-collapse: collapse;
+  margin:0 auto;
+  width:50%;
+}
+table, th, td {
+  border: 10px solid rgb(180, 15, 139);
+  line-height: 2em;
+}
+th {
+  background-color: #F5F5F5;
+  padding: 0 .5em;
+}
+
+td {
+  padding: 0 .9em;
+  text-align: right;
+}
+
+tr:nth-child(even) { /*filas pares */
+  background: #bbbb13;
+}
+
+tr:hover {
+  background: #FFFF66;
+}
+th.sube {
+  background-color: white;
+  background-image: url(imagenes/sube.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-position-x: 4px;
+  padding: 0 .3em 0 1.8em;
+}
+th.mantiene {
+  background: white url(imagenes/mantiene.png) no-repeat left center;
+  background-position-x: 4px;
+  padding: 0 .3em 0 1.8em;
+}
+
+th.baja {
+  background: white url(imagenes/baja.png) no-repeat left center;
+  background-position-x: 4px;
+  padding: 0 .3em 0 1.8em;
+}
