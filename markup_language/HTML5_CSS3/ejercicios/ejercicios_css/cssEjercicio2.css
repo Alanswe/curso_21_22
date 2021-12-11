@@ -1,0 +1,43 @@
+
+html {
+    background-color: #CD5C5C;
+} 
+body main {
+    background-color: #DB7093;
+    padding: 5px;
+    margin-left: 90px;
+    margin-right: auto;
+    height: 230px; /*Altura*/
+    width: 1200px; /*Ancho*/
+}
+body {
+    align-self: center;
+    margin: 0 auto;
+}
+header {
+    text-align: center;
+    font-size: 200%;
+}
+nav {    
+    text-align: center;
+}
+nav a {
+    color: #000;
+    text-decoration: none
+}
+nav a:link{
+    text-decoration: none;
+}
+nav a:hover {
+    text-align: center;
+    color:white;
+    font-variant: small-caps
+}
+nav span {
+    margin-left: 15px; /*Solo era necesario un lado*/
+}
+
+section span:hover {
+    color:white;
+    font-variant: small-caps
+}
