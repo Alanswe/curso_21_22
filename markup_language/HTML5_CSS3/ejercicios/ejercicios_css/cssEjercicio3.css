@@ -1,0 +1,120 @@
+#Tabla_1 {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    text-align: center;
+    border-collapse: collapse;
+    margin:0 auto;
+    width:50%;
+}
+caption { /*Señalamos la posición*/
+    caption-side:top;
+}
+#Sevilla {
+    background-color: maroon;
+    color: white;
+    background: #bbbb13;
+}
+#Sevilla:hover {
+    background: cyan;
+    color: black;
+}
+table, td {
+    border: 5px solid blue;
+    line-height: 2em;
+    text-align: center;
+
+}
+th {
+    background-color: seagreen;
+    padding: 0 .5em;
+    color: black;
+}
+  
+td {
+    padding: 1px;
+    text-align: center;
+}
+td {
+    padding: 1px;
+    text-align: center;
+}
+tr:nth-child(even) { /*filas pares */
+    background: cornflowerblue;
+}
+tr:hover {
+    background: cyan;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+#columnas{
+    column-count:4;
+    column-gap:20px;
+    column-rule:4px Ridge yellowgreen;
+    list-style: none;
+}
+
+/*-----------------------------------------*/
+
+figure img#Imagen_Pequeña {
+	width:50px;
+	height:50px;
+    border-radius: 25px
+}
+figure img#Imagen_Mediana {
+    width:100px;
+	height:100px;
+    border-radius: 50px 20px;
+}
+figure img#Imagen_Grande {
+    width:200px;
+    height:200px;
+    border-radius: 90%;
+}
+
+/*-----------------------------------------------*/
+
+div#Caja_1{
+    width: 500px;
+    height: 120px;
+    border: black 1px solid;
+    margin-left: 20px;
+    margin-right: auto;
+    background-color: lightblue;
+    background-image: url("Imagenes/burbu.png");
+    background-position: right bottom;
+    background-repeat: repeat;
+}
+
+div#Caja_2 {
+    width: 500px;
+    height: 120px;
+    border: black 1px solid;
+    margin-left: 20px;
+    margin-right: auto;
+    background-color: firebrick;
+    background-image: url("Imagenes/christmas-decoration_r.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+div#Caja_3 {
+    width: 500px;
+    height: 120px;
+    border: black 1px solid;
+    margin-left: 20px;
+    margin-right: auto;
+    background-color: rosybrown;
+    background-image: url("Imagenes/christmas.png");
+    background-position: left top;
+    background-repeat: repeat-y;
+}
+
+/*-------------------------------------------------------------------*/
+
+div#Absoluto {
+    border: black 1px solid;
+    position: absolute;
+    top: 930px;
+    left: 73px;
+    z-index: +100;
+}
