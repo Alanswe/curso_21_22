@@ -5,7 +5,7 @@ html {
 body main {
     background-color: #DB7093;
     padding: 5px;
-    margin-left: 90px;
+    margin-left: 90px; /*Entiendo que pides esto según la foto, o un porcentaje*/
     margin-right: auto;
     height: 230px; /*Altura*/
     width: 1200px; /*Ancho*/
@@ -23,21 +23,19 @@ nav {
 }
 nav a {
     color: #000;
-    text-decoration: none
-}
-nav a:link{
-    text-decoration: none;
+    text-decoration: none /*Para quitar en subrayado azul predetermiando*/
 }
 nav a:hover {
-    text-align: center;
     color:white;
     font-variant: small-caps
 }
 nav span {
     margin-left: 15px; /*Solo era necesario un lado*/
 }
-
-section span:hover {
-    color:white;
+section span {
+    color:black;
+}
+:target { /*Para mostrar el seleccionado*/
+    color: white;
     font-variant: small-caps
 }
