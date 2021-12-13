@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fondos múltiples</title>
+        <style type="text/css">
+            /* escribir los selectores y propiedades necesarios*/
+        .ejercicio2 {
+            width: 500px;
+            height: 250px;
+            border: 1px solid black; /*Aplicamos borde a la caja*/
+            margin-left: 05%; /*Entiendo que se tenemosque desplazar un poco la caja*/
+            margin-right: 0 auto;
+            background-color: paleturquoise; 
+            /*-------------*/
+            background-image: url("02ribete.png"), url("03lazorojo.png");
+            /*Insertamos las imagenes*/
+            background-position: left top, right bottom; /*La posición de cada una de ellas*/
+            background-repeat: no-repeat, no-repeat; /*Para que no se repitan*/
+        }
+        div p{
+            /*La pirmera letra en mayus y todas en negrita*/
+            text-transform: capitalize;
+            font-weight: bold;
+            /*Para posicionar el texto*/
+            text-align: right top;
+            position: relative;
+            left: 140px;
+            bottom: 18px;
+            /*Tamaño de la fuente para que corresponda a el ejemplo*/
+            /*Referencia de nabegador Edge, si se cambia se posicionaria erroneamente*/
+            font-size: 80%; 
+        }
+      </style>
+    </head>
+    <body>
+        <div class="ejercicio2">
+            <p>No por mucho madrugar amanece más temprano</p>
+        </div>
+    </body>
+</html>

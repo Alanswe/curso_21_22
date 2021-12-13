@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style>
+        h1 { /*El selector contextual*/
+            text-size-adjust: 300%;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: chartreuse;
+        }
+        #Lorem { /*El selector ID*/
+            color: indigo;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .Class_para_hijo>p { /*El selector de hijo directo (y por clase del padre)*/
+            color: brown;
+            font: oblique bold 120%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hola Antonio</h1>
+        <p id="Lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro et ad qui dignissimos consectetur esse ut deserunt atque molestias! In provident accusamus nisi optio repudiandae adipisci expedita obcaecati consequuntur temporibus!</p>
+    </div>
+    <div class="Class_para_hijo">
+        <p>Hola, soy un hijo de... div, xd</p>
+    </div>
+</body>
+</html>
