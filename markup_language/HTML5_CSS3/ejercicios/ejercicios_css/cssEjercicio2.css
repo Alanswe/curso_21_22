@@ -23,14 +23,12 @@ nav {
 }
 nav a {
     color: #000;
-    text-decoration: none /*Para quitar en subrayado azul predetermiando*/
+    text-decoration: none; /*Para quitar en subrayado azul predetermiando*/
+    margin-left: 15px; /*Solo era necesario un lado*/
 }
 nav a:hover {
     color:white;
     font-variant: small-caps
-}
-nav span {
-    margin-left: 15px; /*Solo era necesario un lado*/
 }
 section span {
     color:black;
