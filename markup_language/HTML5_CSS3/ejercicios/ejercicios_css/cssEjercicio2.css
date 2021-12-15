@@ -1,11 +1,10 @@
-
 html {
     background-color: #CD5C5C;
 } 
 body main {
     background-color: #DB7093;
     padding: 5px;
-    margin-left: 90px; /*Entiendo que pides esto según la foto, o un porcentaje*/
+    margin-left: 10%; /*Entiendo que pides esto según la foto, o un porcentaje*/
     margin-right: auto;
     height: 230px; /*Altura*/
     width: 1200px; /*Ancho*/
