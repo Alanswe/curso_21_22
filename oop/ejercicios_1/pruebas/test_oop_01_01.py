@@ -9,6 +9,3 @@ class Persona(unittest.TestCase):
     def error_valor_edad(self):
         respuesta = oop_01_01.usuario_1.set_edad('Hola')
         self.assertEqual(respuesta,'Error: El valor no es un entero')
-
-if __name__ == '__main__':
-    unittest.main()
