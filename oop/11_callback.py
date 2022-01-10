@@ -1,3 +1,4 @@
+# los callback notifican que la funcio termino lo que sea que hacia y avisa
 class Batidora():
     
     __motor = 0
