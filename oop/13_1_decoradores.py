@@ -11,12 +11,14 @@ def mi_decorador(funcion_a_decorar):
 
 def dercorador_suma(funcion_que_suma):
     def identificador(*args):
-        if args != list:
-            crea_list = []
-            crea_list.append(args)
-            return funcion_que_suma(crea_list)
+        if type(args) != list:
+            list_num = []
+            for element in range(len(args)+1):
+                list_num.append(element)
+            list_num_new = list(list_num)
+            return sum(list_num_new)
         else:
-            return funcion_que_suma(*args)
+            return funcion_que_suma(args)
     return identificador
 
 def saludar():
@@ -41,4 +43,7 @@ def saludar_decorado():
 def sumar(*args):
     return sum(args)
 
-sumar(3,3,3,3)
+
+print(sumar([1,2,3,4]))
+
+print(sumar(1,2,3,4))
