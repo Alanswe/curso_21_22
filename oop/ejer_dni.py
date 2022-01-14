@@ -1,12 +1,17 @@
 """
-Crea una clase NIF que se usará para mantener DNIs con su correspondiente letra.
-Los atributos serán el número de DNI (entero largo) y la letra que le corresponde.
-La clase dispondrá de los siguientes métodos:
-Constructor predeterminado que inicialice el nº de DNI a 0 y la letra a espacio en
-blanco (será un NIF no válido).
-Constructor que reciba el DNI y establezca la letra que le corresponde.
-Accedentes y mutador para el número de DNI (que ajuste automáticamente la letra).
-leer(): que pida el número de DNI (ajustando automáticamente la letra)
+1 - Crea una clase NIF que se usará para mantener DNIs con su correspondiente letra.
+     - Los atributos serán el número de DNI (entero largo) y la letra que le corresponde.
+
+2 - La clase dispondrá de los siguientes métodos:
+     - Constructor predeterminado que inicialice el nº de DNI a 0 y
+     
+99 -  la letra a espacio en blanco (será un NIF no válido).
+
+3 - Constructor que reciba el DNI y establezca la letra que le corresponde.
+
+4 - Getters y setters para el número de DNI (que ajuste automáticamente la letra).
+
+5 - leer(): que pida el número de DNI (ajustando automáticamente la letra)
 Método que nos permita mostrar el NIF (ocho dígitos, un guión y la letra en
 mayúscula; por ejemplo: 00395469-F)
 
@@ -25,16 +30,44 @@ siguiente tabla para obtener la letra que corresponde:
 11 - B
 5  - M
 12 - N
-6  – Y
-13 – J
+6  - Y
+13 - J
 14 - Z
 21 - K
 15 - S
-22 – E
+22 - E
 16 - Q
 17 - V
 18 - H
 19 - L
-20 – C
+20 - C
 
 """
+# 1
+from ntpath import join
+
+
+class Nif():
+    def __init__(self, entero=0, letra=str) -> None:
+        self.entero = entero
+        self.letra = letra
+
+    # 3
+    def asigna_letra(funcion):
+        def calcula_letra(self, entero):
+            resto = entero % 23
+            return resto
+        return funcion
+
+
+
+
+
+
+
+    # 4 - Getters y setters para el número de DNI (que ajuste automáticamente la letra).
+
+    @calcula_letra
+    def get_dni(self):
+
+        return self.entero
