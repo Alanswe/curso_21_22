@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><!--Etiqueta obligatòria que contiene también la versión-->
+<channel><!--Sólo puede existir una etiqueta channel-->
+    <title>RSS</title><!--Element obligatorio de channel-->
+    <link>https://informaticcity.blogspot.com/feeds/posts/default</link><!--Obligatorio de channel-->
+    <description>Informática</description><!--Elemento obligatorio de channel-->
+    <item><!--Cada noticia va dentro de un ítem-->
+        <title>Título de prueba</title><!--Es obligatorio poner un tittle o description en cada ítem-->
+        <link>https://www.lawebdelaspruebas.com/campo1</link>
+    </item>
+    <item>
+        <description>Contenido de prueba 2</description><!--Es obligatorio poner un tittle o description en cada ítem-->
+        <link>https://www.lawebdelaspruebas.com/campo2</link>
+    </item>
+</channel>
+</rss>
