@@ -59,12 +59,6 @@ class Nif():
             return resto
         return funcion
 
-
-
-
-
-
-
     # 4 - Getters y setters para el número de DNI (que ajuste automáticamente la letra).
 
     @calcula_letra
