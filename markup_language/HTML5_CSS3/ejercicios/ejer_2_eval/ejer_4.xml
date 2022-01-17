@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>©2022 Vertical Garden Design | www.verticalgardendesign.com | English edition</title>
+        <link>https://www.verticalgardendesign.com/projects/replay-barcelona-interior</link>
+        <description>Latest news from the Web vertical garden design. Reliable and easy. English edition.</description>
+            <item>
+                <guid isPermaLink="false">https://www.verticalgardendesign.com/products/vertical-garden</guid>
+                <link>https://www.verticalgardendesign.com/products/vertical-garden</link>
+                <category>products</category>
+                <title>As one of the pioneering companies in vertical gardening we have the expertise to deliver solutions that lasts on any scale.</title>
+            </item>
+            <item>
+                <guid isPermaLink="false">https://www.verticalgardendesign.com/products/pinnacle</guid>
+                <link>https://www.verticalgardendesign.com/products/pinnacle</link>
+                <category>products</category>
+                <title>Pinnacle is a plant sculpture and freestanding vertical garden with plants on all sides</title>
+            </item>
+            <item>
+                <guid isPermaLink="false">https://www.verticalgardendesign.com/products/canopy</guid>
+                <link>https://www.verticalgardendesign.com/products/canopy</link>
+                <category>products</category>
+                <title>Canopy is a suspended garden for making plant ceilings</title>
+            </item>            
+        <language>en-En</language>
+    </channel>
+</rss>
+
+<!-- 
+    1 - Crea un fichero .xml que recoja la posibilidad de tener en un feed RSS tres entradas del 
+    apartado Products del sitio web https://www.verticalgardendesign.com/ 
+
+    2 - Posteriormente en un archivo nuevo verticalgardendesign.html crea una barra de
+    navegación vertical que incluyan enlace a los apartados Proyects y Plants así como un icono RSS al feed creado. 
+    Puedes aplicar las etiquetas HTML y propiedades CSS que consideres oportunas. 
+-->
