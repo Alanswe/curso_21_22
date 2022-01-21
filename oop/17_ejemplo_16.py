@@ -14,7 +14,7 @@ class Estudiante():
         return obj_estudiante
 
     @classmethod
-    def estudiante_desde_lista(cls,obj_alumnos): # No necesita self al ser unmetdo de clase
+    def estudiante_desde_lista(cls,obj_alumnos): # No necesita self al ser un metodo de clase
         estudiante = cls(obj_alumnos[0],obj_alumnos[1]) #{'nombre': 'Paco', 'apellidos': 'Lopez Garcia'}
         return estudiante
 
