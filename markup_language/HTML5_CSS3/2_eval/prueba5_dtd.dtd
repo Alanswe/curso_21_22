@@ -1,0 +1,4 @@
+<!ELELENT clase (alumno*)>
+<!ELEMENT alumno (nombre, direccion+)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT direccion (#PCDATA)>
