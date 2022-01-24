@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><!-- Estaba mal las comillas de la version -->
+<rss version="2.0"><!-- Estaba mal las comillas de la versión -->
     <channel> <!--estaba mal tabulado en referencia su padre rss -->
         <title>Diario de Sevilla - Home</title>
         <link>https://www.diariodesevilla.es</link>  <!-- estaba el cierre al poricipio y mal formado, lo cambie y aregle el cierre-->
-         <!-- También el enlace terminaba en /  -->
         <description>Diario de Sevilla</description>
         <item>
             <link>https://www.diariodesevilla.es/sevilla/coronavirus-sevilla-18-enero-2022_0_1648636337.html </link>
@@ -11,8 +10,8 @@
             <title>Coronavirus Sevilla: Los contagios bajan del millar pero repuntan los hospitalizados</title>
             <description>Los hospitales alcanzan su cifra de ingresos más alta de la sexta ola con 430 pacientes</description>
         </item>
-        <language>es-ES</language> <!-- Faltaba marcar la denaminacion del la rama español de España-->
+        <language>es-ES</language> <!-- Faltaba marcar la denominación de la rama español de España-->
         <!-- Estaba mal la sintaxis de las etiquetas -->
     </channel>
 </rss> <!--Estaba en mayusculas -->
-<!-- Diario de Sevilla -->
+<!-- Diario de Sevilla Corrige los errores en el xml-->
