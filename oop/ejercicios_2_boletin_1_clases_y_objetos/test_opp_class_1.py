@@ -1,5 +1,5 @@
 import unittest
-from opp_class_1 import Rectangulo
+from oop_class_1 import Rectangulo
 
 class Test_rectangulo(unittest.TestCase):
     

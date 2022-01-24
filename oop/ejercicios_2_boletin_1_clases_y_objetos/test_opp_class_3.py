@@ -1,5 +1,5 @@
 import unittest
-from opp_class_3 import Tiempo
+from oop_class_3 import Tiempo
 
 class Test_tiempo(unittest.TestCase):
     def test_getters(self):

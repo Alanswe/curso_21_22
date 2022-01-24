@@ -1,5 +1,5 @@
 import unittest
-from opp_class_2 import Coche
+from oop_class_2 import Coche
 
 class Test_coches(unittest.TestCase):
     def test_getters(self):
