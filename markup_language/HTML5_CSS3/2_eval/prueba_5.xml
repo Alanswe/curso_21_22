@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE clase SYSTEM "prueba5dtd.dtd">
+<clase>
+  <alumno>
+    <nombre>Federico</nombre>
+    <direccion>Calle pepina</direccion>
+  </alumno>
+  <alumno>
+    <nombre>Federico</nombre>
+    <direccion>Calle pepina</direccion>
+  </alumno>
+</clase>
