@@ -36,3 +36,12 @@ class Juego():
 ejemplo = Juego()
 
 pprint(ejemplo.play())
+
+
+"""
+While True:
+    if puntos1 >= LIMITE_PUNTOS:
+        uno gana
+    randint(1,CARAS_DE_DADO)
+
+"""

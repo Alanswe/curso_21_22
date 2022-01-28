@@ -1,15 +1,10 @@
-from ast import While
-from multiprocessing import set_forkserver_preload
-from pickle import TRUE
 from random import randint
-
 
 LIMITE_PUNTOS = 100
 NUM_JUGADORES = 2
 CARAS_DE_DADO = 6
 
 class Jugador():
-    
     def __init__(self) -> None:
         self._puntos = 0
         self._nombre = ''
@@ -22,27 +17,32 @@ class Jugador():
     def puntos(self, ptos):
         self._puntos += ptos
 
-
     @property
     def nombre(self):
-        return self.nombre
+        return self._nombre
     
-    @puntos.setter
+    @nombre.setter
     def nombre(self, nom):
         self._nombre = nom
 
+class Partida():
+    def __init__(self) -> None:
+        self._jugadores = []
+        self._crea_lista_jugadores()
 
+    def _crea_lista_jugadores(self):
+        for j in range(NUM_JUGADORES):
+            jug = Jugador()
+            jug.nombre = f'Jugador_{j}'
+            self._jugadores.append(jug)
 
+    def jugar(self):
+        while True:
+            for jugador in self._jugadores:
+                dado = randint(1,CARAS_DE_DADO)
+                jugador.puntos = dado
+                if jugador.puntos >= LIMITE_PUNTOS:
+                    return f'Ganador: {jugador.nombre}'
 
-
-
-
-
-
-"""
-While True:
-    if puntos1 >= LIMITE_PUNTOS:
-        uno gana
-    randint(1,CARAS_DE_DADO)
-
-"""
+p = Partida()
+print(p.jugar)
