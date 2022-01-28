@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE imagen [
+   <!ELEMENT imagen EMPTY>
+      <!ATTLIST imagen fuente ENTITY #REQUIRED> 
+
+   <!ENTITY logo SYSTEM "logo.gif" NDATA gif>
+<!--<!ENTITY logo PUBLIC "-//W3C//GIF logo//EN" "http://www.abrirllave.com/dtd/logo.gif" NDATA gif>-->
+   <!NOTATION gif SYSTEM "image/gif">
+]>
+
+<imagen fuente="logo"/>

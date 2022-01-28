@@ -1,0 +1,13 @@
+<!ELEMENT clase (profesor+, alumno*)>
+  <!ELEMENT profesor (#PCDATA)>
+  <!ELEMENT alumno (nombre, (apellido1, apellido2?)?, dirección, correo, teléfono?, (nif | nie), materias)>
+  <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellido1 (#PCDATA)>
+    <!ELEMENT apellido2 (#PCDATA)>
+  <!ELEMENT dirección (#PCDATA)>
+  <!ELEMENT correo (#PCDATA)>
+  <!ELEMENT teléfono (#PCDATA)>
+  <!ELEMENT nif (#PCDATA)>
+  <!ELEMENT nie (#PCDATA)>
+  <!ELEMENT materias (asignatura+)>
+  <!ELEMENT asignatura (#PCDATA)>

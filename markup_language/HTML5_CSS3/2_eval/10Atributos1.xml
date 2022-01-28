@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE deportistas [
+   <!ELEMENT deportistas (futbol | F1 | tenis)*>
+   <!ELEMENT futbol (#PCDATA)>
+   <!ELEMENT F1 (#PCDATA)>
+      <!ATTLIST F1 país CDATA "España">
+   <!ELEMENT tenis (#PCDATA)>
+]>
+
+<deportistas>
+   <F1 país="Alemania">Sebastian Vettel</F1>
+   <F1>Fernando Alonso</F1>
+   <tenis>Rafael Nadal</tenis>
+</deportistas>
