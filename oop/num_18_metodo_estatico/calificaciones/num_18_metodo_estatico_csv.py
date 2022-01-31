@@ -1,11 +1,8 @@
-"""
-Crear una clase Calificaciones.
-Tendrá un método init que admitirá como entrada una lista de forma ['Raul',9.2,5,4.5,7,9.1]
-Tendra un método 'calificar' que nos devolverá ['Raul', 'Notable']
-TODO:
-    - Crear lista de alumnos a partir de un archivo (CSV, Long. fija, etc)
-    - Crear lista a partir de base de datos
-    - Crear lista a partir de JSON
+""" MONO
+1 - La clase csv tendría: Alumno, Boletin1,Boleton2,Boletin3... ejemplo: 'Pepe,5,7.5,6,7,8' como max 10 notas
+2 - Convertir el csv en diccionario en valores nombre y boletines
+    o una lista
+3 - para cada alumno tasformar la recepcion de datos
 """
 class NotasInvalidasError(Exception):
     pass
@@ -43,18 +40,12 @@ class Calificaciones():
             calificacion = None
         
         return calificacion
+
+    def calificacion_desde_csv(Calificaciones,obj_csv):
+        estudiante = dict(obj_csv) #{'nombre': 'Pepe', 'boletines': '5,7.5,6,7,8'}
+        obj_estudiante = Calificaciones(estudiante['nombre'], estudiante['boletines'])
+        return obj_estudiante
     
-    # def alumno_sin_registro(self, nuevo_alumno):
-    #     if self.nombre == '':
-    #         self.nombre = nuevo_alumno
-    #     return self.nombre
-
-    # def set_alumno(self, alum):
-    #     self.nombre = alum[0]
-    #     for elem in alum[1:]:
-    #         self.notas.append(elem)
-    #     self.calificacion = self.calcula_calificacion()
-
     @property
     def alumno(self):
         return self.__nombre
@@ -69,11 +60,6 @@ class Calificaciones():
 
     @notas.setter
     def notas(self, nuevas_notas):
-        # if self.valida_notas(nuevas_notas):
-        #     self.__notas = nuevas_notas
-        #     self.__calificacion = self.calcula_calificacion()
-        # else:
-        #     raise Exception('Notas inválidas')
         try:
             if self.valida_notas(nuevas_notas):
                 self.__notas = nuevas_notas
@@ -87,27 +73,65 @@ class Calificaciones():
 
     @staticmethod
     def valida_notas(lista_notas):
-        """
-        Devuelve True cuando:
-            - Cada nota esté entre 0-10
-            - El tipo debe ser int o float
-            - La lista no debe estar vacía
-        """
         valido = True
         if lista_notas == []:
-            # valido = False
             raise NotasInvalidasError('La lista de notas está vacía')
 
         for nota in lista_notas:
             if not type(nota) in (int,float) or not (0.0<= nota <= 10.0) :
-                # valido = False
                 raise NotasInvalidasError('El tipo de dato o valores incorretos')
         
         return valido
 
-cal = Calificaciones()
-# cal.set_alumno_notas(['Fernando',6,5,6,7,7])
-# print(cal.get_alumno_notas())
-# print(cal.calcula_calificacion())
-print(cal.valida_notas([6, 5, 6, 33, 7]))
-print(cal.valida_notas([6, 5, 6, 7, 7]))
+
+x = Calificaciones.calificacion_desde_csv(Calificaciones,'Pepe,5,7.5,6,7,8')
+print(x)
+
+
+# cal = Calificaciones()
+# print(cal.valida_notas([6, 5, 6, 33, 7]))
+# print(cal.valida_notas([6, 5, 6, 7, 7]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Estudiante():
+    def __init__(self,nombre,apellido) -> None:
+        self.nombre = nombre
+        self.apellido = apellido
+
+    def __str__(self) -> str:
+        return f'Estudiante: {self.nombre} {self.apellido}'
+
+    @classmethod
+    def estudiante_desde_csv(cls,obj_csv): # No necesita self al ser un método de clase
+        estudiante = dict(obj_csv) #{'nombre': 'Paco', 'apellidos': 'Lopez Garcia'}
+        obj_estudiante = cls(estudiante['nombre'], estudiante['apellidos'])
+        return obj_estudiante
+
+

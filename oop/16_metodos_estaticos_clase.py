@@ -22,7 +22,7 @@ class Estudiante():
         return f'Estudiante: {self.nombre} {self.apellido}'
 
     @classmethod
-    def estudiante_desde_json(cls,obj_json): # No necesita self al ser unmetdo de clase
+    def estudiante_desde_json(cls,obj_json): # No necesita self al ser un método de clase
         estudiante = dict(obj_json) #{'nombre': 'Paco', 'apellidos': 'Lopez Garcia'}
         obj_estudiante = cls(estudiante['nombre'], estudiante['apellidos'])
         return obj_estudiante
