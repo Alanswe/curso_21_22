@@ -2,23 +2,29 @@
 Crear una clase Calificaciones.
 Tendrá un método init que admitirá como entrada una lista de forma ['Raul',9.2,5,4.5,7,9.1]
 Tendra un método 'calificar' que nos devolverá ['Raul', 'Notable']
+TODO:
+    - Crear lista de alumnos a partir de un archivo (CSV, Long. fija, etc)
+    - Crear lista a partir de base de datos
+    - Crear lista a partir de JSON
 
 """
+class NotasInvalidasError(Exception):
+    pass
 
 class Calificaciones():
     def __init__(self,alumno_notas=[]) -> None:
 
         if alumno_notas:
-            self.nombre = alumno_notas[0]
-            self.notas = alumno_notas[1:]
-            self.calificacion = self.calcula_calificacion()
+            self.__nombre = alumno_notas[0]
+            self.__notas = alumno_notas[1:]
+            self.__calificacion = self.calcula_calificacion()
         else:
-            self.nombre = ''
-            self.notas = []
-            self.calificacion = ''
+            self.__nombre = ''
+            self.__notas = []
+            self.__calificacion = ''
     
     def __str__(self) -> str:
-        return f'Alumno: {self.nombre} tiene la calificación {self.calificacion}'
+        return f'Alumno: {self.__nombre} tiene la calificación {self.__calificacion}'
 
     def calcula_calificacion(self):
         calificacion = ''
@@ -33,31 +39,75 @@ class Calificaciones():
                 calificacion = 'NOTABLE'
             else:
                 calificacion = 'SOBRESALIENTE'
+            
         else:
             calificacion = None
+        
         return calificacion
+    
+    # def alumno_sin_registro(self, nuevo_alumno):
+    #     if self.nombre == '':
+    #         self.nombre = nuevo_alumno
+    #     return self.nombre
 
-    def set_alumno_notas(self,new_alumno):
-        if new_alumno:
-            self.nombre = new_alumno[0]
-            self.notas = new_alumno[1:]
-        else:
-            new_alumno = None
 
-    def get_alumno_notas(self):
-        return self.nombre,self.notas
+    # def set_alumno(self, alum):
+    #     self.nombre = alum[0]
+    #     for elem in alum[1:]:
+    #         self.notas.append(elem)
+    #     self.calificacion = self.calcula_calificacion()
+
+    @property
+    def alumno(self):
+        return self.__nombre
+
+    @alumno.setter
+    def alumno(self,nuevo_alumno):
+        self.__nombre = nuevo_alumno
+
+    
+    @property
+    def notas(self):
+        return self.__notas
+
+    @notas.setter
+    def notas(self, nuevas_notas):
+        # if self.valida_notas(nuevas_notas):
+        #     self.__notas = nuevas_notas
+        #     self.__calificacion = self.calcula_calificacion()
+        # else:
+        #     raise Exception('Notas inválidas')
+        try:
+            if self.valida_notas(nuevas_notas):
+                self.__notas = nuevas_notas
+                self.__calificacion = self.calcula_calificacion()
+        except NotasInvalidasError:
+            pass        
+
+    
+    @property
+    def calificacion(self):
+        return self.__calificacion
 
     @staticmethod
     def valida_notas(lista_notas):
-        validacion = True
-        for x in lista_notas:
-            if x != int or float:
-                validacion = False
-            elif 0 <= x <= 10:
-                validacion = True
-            else:
-                validacion = True
-        return validacion
+        """
+        Devuelve True cuando:
+            - Cada nota esté entre 0-10
+            - El tipo debe ser int o float
+            - La lista no debe estar vacía
+        """
+        valido = True
+        if lista_notas == []:
+            # valido = False
+            raise NotasInvalidasError('La lista de notas está vacía')
+
+        for nota in lista_notas:
+            if not type(nota) in (int,float) or not (0.0<= nota <= 10.0) :
+                # valido = False
+                raise NotasInvalidasError('El tipo de dato o valores incorretos')
+        
+        return valido
 
 cal = Calificaciones()
 # cal.set_alumno_notas(['Fernando',6,5,6,7,7])

@@ -1,6 +1,3 @@
-from tkinter import EXCEPTION
-
-
 ruta = '/home/alan/Descargas/'
 def lee_fichero(nombre):
     try:
