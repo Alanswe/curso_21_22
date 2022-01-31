@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE pizzas SYSTEM "Ejercicio4DTD.dtd">
+<pizzas>
+  <ingredientes>
+    <ingrediente ID="A-2"></ingrediente>
+  </ingredientes>
+  <tipos>
+    <tipo nobre="" ingredientes=""></tipo>
+  </tipos>
+</pizzas>

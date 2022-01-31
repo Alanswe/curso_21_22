@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE geometría SYSTEM "Ejercicio2DTD.dtd">
+<geometría>
+<forma>
+   <nombre>rombo</nombre>
+   <características>
+      <color>naranja</color>
+      <tipo>plana</tipo>
+   </características>
+   <numlados>4</numlados>
+</forma>
+<forma>
+   <nombre>rectángulo</nombre>
+   <características>
+    <descripción>El color elegido es el verde y el tipo es especial, adecuándose a lo solicitado.</descripción>
+   </características>
+   <numlados/>
+</forma>
+</geometría>
