@@ -2,9 +2,9 @@
 <!DOCTYPE pizzas SYSTEM "Ejercicio4DTD.dtd">
 <pizzas>
   <ingredientes>
-    <ingrediente ID="A-2"></ingrediente>
+    <ingrediente coding="A-2">Romero</ingrediente>
   </ingredientes>
   <tipos>
-    <tipo nobre="" ingredientes=""></tipo>
+    <tipo nombre="Planta" ingredientes="A-2"/>
   </tipos>
 </pizzas>

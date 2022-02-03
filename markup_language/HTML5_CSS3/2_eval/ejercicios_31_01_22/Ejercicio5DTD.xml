@@ -9,7 +9,8 @@
 ]>
 <declaraciones>
    <consonante valor="3.141592">PI</consonante>
+    <tipo_de_dato>area</tipo_de_dato>
+   <tipo_de_dato>longitud</tipo_de_dato>
    <variable tipo="real">radio</variable>
-   <variable>area</variable>
-   <variable>longitud</variable>
+
 </declaraciones>
