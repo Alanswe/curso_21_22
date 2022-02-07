@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE vuelos SYSTEM "Ejercicio6DTD.dtd">
+<vuelos>
+  <vuelo coding="V-22" estado="R">
+    <diario>SÍ</diario>
+    <origen>NEW YORK</origen>
+    <destino>CHICAGO</destino>
+    <hora_salida>9:30</hora_salida>
+    <hora_llegada>10:15</hora_llegada>
+  </vuelo>
+  
+  <vuelo coding="V-23" estado="C">
+    <diario>NO</diario>
+    <origen>NEW YORK</origen>
+    <destino>MIAMI</destino>
+    <hora_salida>10:15</hora_salida>
+    <hora_llegada>11:15</hora_llegada>
+  </vuelo>
+
+</vuelos>
