@@ -23,11 +23,8 @@ class CD():
 	def grabaCancion(self,int,Cancion):
 		self.canciones[int-1] = Cancion
 
-	def agrega(self,Cancion):
-		self.canciones.append(Cancion)
+	def agrega(self,cancion):
+		self.canciones.append(cancion)
 
 	def elimina(self,int):
 		self.canciones.remove(self.canciones[int-1])
-
-	def get_lista_total(self):
-		return self.canciones
