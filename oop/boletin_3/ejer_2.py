@@ -1,14 +1,33 @@
-"""
-Desarrolla una clase CD con los siguientes atributos:
-	- canciones: un array de objetos de la clase Cancion.
-	- contador: la siguiente posición libre del array canciones.
+"""							Ejercicio 2 de Alan Sweere
+Consiste en una clase cd en la que están los objetos 'canción', 
+a la que añadimos,eliminamos y otras funciones de CD
 
-y los siguientes métodos:
-	- CD(): constructor predeterminado (creará el array canciones).
-	- numeroCanciones(): devuelve el valor del contador de canciones.
-	- dameCancion(int): devuelve la Cancion que se encuentra en la posición indicada.
-	- grabaCancion(int, Cancion): cambia la Cancion de la posición indicada por la nueva Cancion proporcionada.
-	- agrega(Cancion): agrega al final del array la Cancion proporcionada.
-	- elimina(int): elimina la Cancion que se encuentra en la posición indicada.
+El contador dice la siguiente posicion libre del array de canciones,
+siendo siempre una más que la lista de canciones actual.
 
+list_40 = ['Dont go yet','Tacones rojos','Abcdefu','Dont be shy','La fama']
+ejemplos para test = 'Easy on me','Música ligera'
 """
+class CD():
+
+	def __init__(self) -> None:
+		self.canciones = ['Dont go yet','Tacones rojos','Abcdefu','Dont be shy','La fama']
+		self._contador = len(self.canciones)+1 #la siguiente posición libre del array canciones.
+
+	def numeroCanciones(self):
+		return self._contador
+
+	def dameCancion(self,int):
+		return self.canciones[int-1]
+
+	def grabaCancion(self,int,Cancion):
+		self.canciones[int-1] = Cancion
+
+	def agrega(self,Cancion):
+		self.canciones.append(Cancion)
+
+	def elimina(self,int):
+		self.canciones.remove(self.canciones[int-1])
+
+	def get_lista_total(self):
+		return self.canciones
