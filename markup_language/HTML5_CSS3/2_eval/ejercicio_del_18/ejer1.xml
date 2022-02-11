@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE biblioteca SYSTEM "ejer1.dtd">
+<biblioteca>
+<libro donacion="">
+<titulo></titulo>
+<autor></autor>
+<foto></foto>
+<editorial></editorial>
+<edicion></edicion>
+<ISBN></ISBN>
+<ubicacion></ubicacion>
+</libro>
+<libro></libro>
+<libro></libro>
+</biblioteca>
