@@ -13,7 +13,7 @@ import csv
 class NotasInvalidasError(Exception):
     pass
 
-archivo_alumnos = '/home/alan/Documentos/GitHub/curso_21_22/oop/boletin_3/alumnos.csv'
+archivo_alumnos = '/home/alan/Documentos/GitHub/curso_21_22/programacion_py/2_eval/boletines/boletin_3/alumnos.csv'
 
 class Calificaciones():
     def __init__(self,alumno_notas=[]) -> None:
