@@ -16,7 +16,7 @@ class Test_para_cd(unittest.TestCase):
         self.assertEqual(cd._contador,6)
 
     def test_devuelve_contador(self):
-        ejemplo = CD().numeroCanciones()
+        ejemplo = CD().numeroCanciones
         self.assertEqual(ejemplo,6)
 
     def test_devuelve_cancion(self):

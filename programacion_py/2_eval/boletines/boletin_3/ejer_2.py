@@ -14,6 +14,7 @@ class CD():
 		self.canciones = ['Dont go yet','Tacones rojos','Abcdefu','Dont be shy','La fama']
 		self._contador = len(self.canciones)+1 #la siguiente posición libre del array canciones.
 
+	@property
 	def numeroCanciones(self):
 		return self._contador
 
