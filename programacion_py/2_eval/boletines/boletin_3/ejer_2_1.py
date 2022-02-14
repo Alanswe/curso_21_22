@@ -11,12 +11,27 @@ ejemplos para test = 'Easy on me','Música ligera'
 class CD():
 
 	def __init__(self) -> None:
-		self.canciones = ['Dont go yet','Tacones rojos','Abcdefu','Dont be shy','La fama']
-		self._contador = len(self.canciones)+1 #la siguiente posición libre del array canciones.
+		self.canciones = ['Dont go yet','Tacones rojos','Abcdefu','vacío','La fama']
+		self.contador = self.contador_def() #la siguiente posición libre del array canciones.
 
+	def contador_def(self):# solo esta cdontando el primer elemento en ¡vez de recorrewr la cadena entera
+		for x in self.canciones:
+			num = 0
+			if x == 'vacío':
+				num = self.canciones.index('vacío')
+			return num
+
+	def prueba(self):
+		return self.canciones.index('vacío')
+				
 	def numeroCanciones(self):
-        # cuenta las canciones que no esten vacias
-		return self._contador
+		vacios = 0
+		for x in self.canciones:
+			if x == 'vacío':
+				vacios += 1
+			else:
+				pass
+		return len(self.canciones) - vacios
 
 	def dameCancion(self,int):
 		return self.canciones[int-1]
@@ -28,17 +43,14 @@ class CD():
 		self.canciones.append(cancion)
 
 	def elimina(self,int):
-        # para el elemina deberia cambiar el contenidpo de la indicada por ' ' (cancion en blanco)
 		self.canciones[int-1] = 'vacío'
-    
-    def contador_def(self): # no pilla el def
-        vacios = 0
-        if self.canciones.index('vacío'):
-            vacios += 1
-        return self._contador - vacios
 
             
-    
+ejemplo = CD()
+print(ejemplo.contador_def())
+
+
+   
 
 """
 cuando decia que 'la siguiente posición libre del array canciones'  se refiera a cualquier psocion, es decir
