@@ -20,7 +20,7 @@
   
   <xs:simpleType name="tipoEdad">
     <xs:restriction base="integrer">
-          <xs:minInclusive value="0"/>
+          <xs:minInclusive value="0"/><!-- exclusive seria contando con el cero, como => -->
           <xs:maxInclusive value="100"/>
     </xs:restriction>
   </xs:simpleType>
