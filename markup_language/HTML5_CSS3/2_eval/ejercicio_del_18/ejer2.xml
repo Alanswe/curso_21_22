@@ -1,7 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE matricula SYSTEM "matricula.dtd">
+<!--<!DOCTYPE matricula SYSTEM "matricula.dtd">-->
+<!DOCTYPE matricula[
+<!ELEMENT matricula (personal+, pago)>
+<!ELEMENT personal (dni, nombre, titulacion, curso_academico, domicilios)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT titulacion (#PCDATA)>
+<!ELEMENT curso_academico (#PCDATA)>
+<!ELEMENT domicilios (domicilio+)>
+<!ELEMENT domicilio (nombre)>
+<!ATTLIST domicilio tipo (familiar | habitual) #REQUIRED>
+<!ELEMENT pago (tipo_matricula)>
+<!ELEMENT tipo_matricula (#PCDATA)>
+]>
 <matricula>
-
 <personal>
 <dni>99223366M</dni>
 <nombre>Juan Pardo Martín</nombre>
@@ -12,7 +24,5 @@
 <domicilio tipo="habitual"><nombre>C/ Secundaria nº2</nombre></domicilio>
 </domicilios>
 </personal>
-
 <pago><tipo_matricula>Matrícula Ordinaria</tipo_matricula></pago>
-
 </matricula>

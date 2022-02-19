@@ -1,0 +1,16 @@
+<!ELEMENT biblioteca (libro+)>
+  <!ELEMENT libro (titulo,autor+,foto*,editorial,edicion,ISBN,donacion?,ubicacion)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT foto (#PCDATA)>
+<!-- <!ELEMENT foto ENTITY>
+    <!ATTLIST foto portada ENTITY #REQUIRED>
+    <!ENTITY reina_roja SYSTEM "imagenes/reina_roja.jpg" NDATA jpg>
+    <!ENTITY fundacion SYSTEM "imagenes/fundacion.jpg" NDATA jpg>
+    <!NOTATION jpg SYSTEM "aplicaciones/visordeimagenes.exe">-->
+    <!ELEMENT editorial (#PCDATA)>
+    <!ELEMENT edicion (#PCDATA)>
+    <!ELEMENT ISBN (#PCDATA)>
+    <!ELEMENT donacion (#PCDATA)>
+    <!ELEMENT ubicacion ENTITY>
+    <!ATTLIST ubicacion sede (centro | norte | sur ) #IMPLIED>

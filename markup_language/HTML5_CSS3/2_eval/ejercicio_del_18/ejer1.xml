@@ -1,15 +1,24 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <!DOCTYPE biblioteca SYSTEM "ejer1.dtd">
 <biblioteca>
-<libro donacion="">
-<titulo></titulo>
-<autor></autor>
-<foto></foto>
-<editorial></editorial>
-<edicion></edicion>
-<ISBN></ISBN>
-<ubicacion></ubicacion>
+<libro>
+<titulo>Reina roja</titulo>
+<autor>Juan Gómez-Jurado</autor>
+<foto portada="reina_roja"/>
+<editorial>Ediciones B</editorial>
+<edicion> 001</edicion>
+<ISBN>8466664416</ISBN>
+<donacion></donacion>
+<ubicacion>sur</ubicacion>
 </libro>
-<libro></libro>
-<libro></libro>
+<libro>
+<titulo>Fundación</titulo>
+<autor>Isaac Asimov</autor>
+<foto portada="fundacion"/>
+<editorial>DEBOLSILLO</editorial>
+<edicion>002</edicion>
+<ISBN>8497599241</ISBN>
+<donacion>SI</donacion>
+<ubicacion>centro</ubicacion>
+</libro>
 </biblioteca>
