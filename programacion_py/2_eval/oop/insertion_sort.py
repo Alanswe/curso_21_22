@@ -28,7 +28,7 @@ class Insort():
         #     posicion_1 = 0
         #     posicion_2 = 1
 
-        #     if x > self.lista_des[posicion_2]:
+        #     if x > self.lista_des[posicion_2]: # self.lista_des[posicion_1]
         #         valor_1 = self.lista_des[posicion_1]
         #         valor_2 = self.lista_des[posicion_2]
         #         self.lista_des[posicion_2] = valor_1
