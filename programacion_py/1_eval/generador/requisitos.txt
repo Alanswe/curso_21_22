@@ -1,0 +1,3 @@
+1. Generar el esqueleto un de página web !+tab
+2. en body ##__##
+3. A partir de una lista genere un archivo HTML
