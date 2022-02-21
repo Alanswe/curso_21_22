@@ -14,7 +14,3 @@ for i in range(10):
         break
 if veces > 9:
     print(f'¡Has perdido! :(\nEl número era {objetivo}')
-
-
-
-#random.randrange
