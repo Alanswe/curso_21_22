@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<videoteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:noNamespaceSchemaLocation="11ElementosXSD.xsd">
+
+   <directores>
+      <director coddir="CE">Clint Eastwood</director>
+      <director coddir="JC">James Cameron</director>
+   </directores>
+   <peliculas>
+     <pelicula direccion="JC">Avatar</pelicula>
+      <pelicula direccion="CE">Mystic River</pelicula>
+      <pelicula direccion="JC">Titanic</pelicula>
+
+   </peliculas>
+</videoteca>

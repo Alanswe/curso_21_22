@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="personas">
+    <xs:complexType>
+    <xs:sequence>
+       <xs:element name="persona" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:group ref="datosBasicos"  /> <!-- más adelante tendré que definir datosBasicos y los elementos que lo componen -->
+        </xs:complexType>
+      </xs:element>
+  </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+
+
+
+<xs:group name="datosBasicos">
+    <xs:sequence>
+      <xs:element name="nombre" type="xs:string"/>
+      <xs:element name="edad" type="xs:positiveInteger"/>
+      <xs:element name="pais" type="xs:string"/>
+    </xs:sequence>
+</xs:group>
+
+
+</xs:schema>

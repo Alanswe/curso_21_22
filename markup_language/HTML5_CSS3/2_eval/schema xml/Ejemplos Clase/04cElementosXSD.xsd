@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:element name="datos">
+  <xs:complexType>
+  <xs:sequence>
+    <xs:element name="fecha_nac" type="tipoMes"/>
+    <xs:element name="paisOrigen" type="tipoPais"/>
+    <xs:element name="paisDestino" type="tipoPais"/>
+  </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<!-- defino tipoMes que pertenece a un elemento complejo -->
+<xs:complexType name="tipoMes">
+      <xs:attribute name="mes">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="enero"/>
+         <xs:enumeration value="febrero"/>
+         <xs:enumeration value="marzo"/>
+         <xs:enumeration value="abril"/>
+         <xs:enumeration value="mayo"/>
+         <xs:enumeration value="junio"/>
+         <xs:enumeration value="julio"/>
+         <xs:enumeration value="agosto"/>
+         <xs:enumeration value="septiembre"/>
+         <xs:enumeration value="octubre"/>
+         <xs:enumeration value="noviembre"/>
+         <xs:enumeration value="diciembre"/>
+      </xs:restriction>
+   </xs:simpleType>
+   </xs:attribute>
+   </xs:complexType>
+   
+   <!-- defino tipoPais que pertenece a un elemento simple y además lo uso en dos elementos distintos -->
+   <xs:simpleType name="tipoPais">
+   <xs:restriction base="xs:string">
+         <xs:enumeration value="España"/>
+         <xs:enumeration value="Francia"/>
+         <xs:enumeration value="Portugal"/>
+         <xs:enumeration value="Argelia"/>
+      </xs:restriction>
+   </xs:simpleType>
+   
+   
+   </xs:schema>

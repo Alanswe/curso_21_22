@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<lugar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="09ElementosXSD.xsd">
+  <ciudad>
+    <pais>Italia</pais>
+    <nombre>Florencia</nombre>
+    <observaciones>Cuna del Renacimiento y de los Medici.</observaciones>
+  </ciudad>
+  <hotel>
+    <nombre>Gran Hotel Central</nombre>
+    <categoria>4</categoria>
+    <observaciones>Grandes salones para conferencias y eventos especiales.</observaciones>
+  </hotel>
+</lugar>

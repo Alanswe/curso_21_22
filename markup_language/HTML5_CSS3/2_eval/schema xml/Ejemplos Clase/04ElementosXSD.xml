@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<datos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:noNamespaceSchemaLocation="04ElementosXSD.xsd">
+	    <nombre>Casimiro</nombre>
+      <mes>2</mes>
+      <color>rojo</color>
+      <clave>pi311tdd</clave>
+      <direccion>
+Calle de la Morería 34
+
+
+41003 Sevilla
+      </direccion>
+      <letra>k</letra>
+</datos>
