@@ -1,0 +1,8 @@
+   <!ELEMENT geometría (forma*)>
+   <!ELEMENT forma (nombre, características, numlados)>
+   <!ELEMENT nombre (#PCDATA)>
+   <!ELEMENT características ((color, tipo) | descripción)>
+    <!ELEMENT descripción (#PCDATA)>
+   <!ELEMENT color (#PCDATA)>
+   <!ELEMENT tipo (#PCDATA)>
+  <!ELEMENT numlados (#PCDATA)>

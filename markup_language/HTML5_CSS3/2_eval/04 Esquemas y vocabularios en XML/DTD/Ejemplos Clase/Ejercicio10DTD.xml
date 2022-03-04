@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE Concesionario [
+
+  <!ELEMENT Concesionario (Modelo)*>
+    <!ELEMENT Modelo ((Motor, Potencia, Consumo_medio)?, restoDescripción)*>
+        <!ATTLIST Modelo  id ID #REQUIRED>
+        <!ATTLIST Modelo Modelos_relacionados IDREFS #IMPLIED>
+        <!ATTLIST Modelo precio CDATA #IMPLIED>
+      <!ELEMENT Motor (#PCDATA)>
+          <!ATTLIST Motor Modelos_relacionados IDREFS #REQUIRED>
+      <!ELEMENT Potencia (#PCDATA)><!-- En Caballos Vapor -->
+      <!ELEMENT Consumo_medio (#PCDATA)><!-- En litros. -->
+          <!ATTLIST Consumo_medio Velocidad_km CDATA "" >
+    <!ENTITY noDisp "No Disponible">
+    <!ELEMENT restoDescripción (#PCDATA)> <!-- Texto explicativo -->
+    
+]>
+<Concesionario>
+
+    <Modelo id="Modelo556">
+          <restoDescripción>&noDisp;</restoDescripción>
+    </Modelo>
+    <Modelo id="Modelo555" Modelos_relacionados="Modelo444 Modelo556" precio="2225000">
+        <Motor Modelos_relacionados="Modelo556">1.998cc 16v. de cuatro cilindros</Motor> 
+        <Potencia>128</Potencia> 
+        <Consumo_medio Velocidad_km="100">11</Consumo_medio> 
+        <restoDescripción>Este modelo tiene un motor 1.998cc 16v. de cuatro cilindros, que desarrolla una potencia de 128 CV. 
+        Dispone de cambio manual ... el consumo medio de este monovolumen es 11 a los 100 km. </restoDescripción>
+    </Modelo>
+    
+    <Modelo id="Modelo557">
+      <restoDescripción>&noDisp;</restoDescripción>
+    </Modelo>
+    
+   <Modelo id="Modelo154">
+      <restoDescripción>&noDisp;</restoDescripción>
+    </Modelo>
+    
+    <Modelo id="Modelo444" Modelos_relacionados="Modelo555 Modelo154" precio="2500000">
+         <Motor Modelos_relacionados="Modelo556">2.000cc 16v. de cuatro cilindros</Motor> 
+         <Potencia>128</Potencia> 
+         <Consumo_medio Velocidad_km="100">11</Consumo_medio> 
+         <restoDescripción>Este modelo tiene un motor 2.000cc 16v. de cuatro cilindros con 128 CV. 
+         Dispone de cambio manual ... el consumo medio de este monovolumen es 11 a los 100 km.</restoDescripción>
+    </Modelo>
+
+</Concesionario>

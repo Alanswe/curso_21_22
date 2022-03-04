@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<marcadores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Ejercicio02Schema.xsd">
-<pagina>
-<nombre>google</nombre>
-<descripcion>Buscador principal</descripcion>
-<url>https://www.google.es/</url>
-</pagina>
-</marcadores>

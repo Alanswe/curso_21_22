@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE autor [
+   <!ELEMENT autor (nombre, empresa, teléfono)>
+   <!ELEMENT nombre (#PCDATA)>
+   <!ELEMENT empresa (#PCDATA)>
+   <!ELEMENT teléfono (#PCDATA)>
+]>
+<autor>
+   <nombre>Tanmay Patil</nombre>
+   <empresa>TutorialsPoint</empresa>
+   <teléfono>(011) 123-4567</teléfono>
+</autor>

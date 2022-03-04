@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE aviso SYSTEM "Ejercicio8DTD.dtd">
+<aviso>
+  <titulo>Noticia1</titulo>
+  <parrafo>...</parrafo>
+  <grafico foto="foto1">...</grafico>
+  <parrafo>...</parrafo>
+  <!--  siguiente -->
+  <titulo>Noticia2</titulo>
+  <parrafo>...</parrafo>
+  <parrafo>...</parrafo>
+  <grafico foto="foto2">...</grafico>
+  <parrafo>...</parrafo>
+  <parrafo>...</parrafo>
+  <grafico foto="foto3">...</grafico>
+<!--  siguiente -->
+  <titulo>Noticia3</titulo>
+  <parrafo>...</parrafo>
+  <parrafo>...</parrafo>
+<!--  siguiente -->
+    <titulo>Noticia4</titulo>
+  <parrafo>...</parrafo>
+  <parrafo>...</parrafo>
+  <parrafo>...</parrafo>
+  <grafico foto="foto4">...</grafico>
+  <grafico foto="foto5">...</grafico>
+  <parrafo>...</parrafo>
+
+  </aviso>

@@ -1,0 +1,10 @@
+<!ELEMENT becas (beca*)>
+<!ELEMENT beca (alumno, ies)>
+<!ENTITY % direccion "calle, ciudad, cp">
+<!ELEMENT alumno (dni, %direccion;)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT cp (#PCDATA)>
+<!ELEMENT ies (centro, %direccion;)>
+<!ELEMENT centro (#PCDATA)>

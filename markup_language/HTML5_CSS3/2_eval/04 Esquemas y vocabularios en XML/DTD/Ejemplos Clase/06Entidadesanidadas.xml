@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE frase [
+<!ELEMENT frase (#PCDATA)>
+<!ENTITY color "azul">
+<!ENTITY frase "El cielo es &color;.">
+]>
+<frase>&frase;</frase>

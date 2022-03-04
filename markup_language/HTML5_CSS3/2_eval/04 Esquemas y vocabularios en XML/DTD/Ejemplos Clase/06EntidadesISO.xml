@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<!DOCTYPE textos [
+<!ELEMENT textos (texto)+>
+<!ELEMENT texto (#PCDATA)>
+<!ENTITY escritor "Miguel de Cervantes">
+<!ENTITY obra "El Quijote">
+<!ENTITY fecha "29/09/1947">
+]>
+<textos>
+  <texto>Los caracteres &lt; y &amp; no pueden escribirse
+  si no es como comienzo de marcas por lo que usamos caracteres de escape</texto>
+  <texto><![CDATA[ USO DE CDATA. Los caracteres < y & no pueden escribirse
+  si no es como comienzo de marcas ]]></texto>
+  <texto>&obra; fue escrito por &escritor;.</texto>
+  <texto>&escritor; nació el &fecha;.</texto>
+</textos>

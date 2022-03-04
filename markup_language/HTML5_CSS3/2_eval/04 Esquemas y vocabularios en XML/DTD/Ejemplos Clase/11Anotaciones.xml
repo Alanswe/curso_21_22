@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE frutas [
+   <!ELEMENT frutas (fruta)*>
+   <!ELEMENT fruta EMPTY>
+   <!ATTLIST fruta foto ENTITY #REQUIRED>
+
+   <!ENTITY manzana SYSTEM "manzana.gif" NDATA gif>
+   <!ENTITY naranja SYSTEM "naranja.gif" NDATA gif>
+
+   <!NOTATION gif SYSTEM "image/gif">
+]>
+
+<frutas>
+   <fruta foto="manzana"/>
+   <fruta foto="naranja"/>
+</frutas>

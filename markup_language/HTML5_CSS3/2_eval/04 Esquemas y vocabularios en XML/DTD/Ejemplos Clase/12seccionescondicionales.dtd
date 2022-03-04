@@ -1,0 +1,17 @@
+<!-- Declaración de elementos comunes -->
+<!ELEMENT mensajes (mensaje*)>
+<!-- Mensaje largo -->
+<![ %largo; [
+<!ELEMENT mensaje (titulo, emisor, receptor, contenido, palabras)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT palabras (#PCDATA)>
+]]>
+<!-- Mensaje corto -->
+<![ %corto; [
+<!ELEMENT mensaje (emisor, receptor, contenido)>
+]]>
+
+<!-- Declaración de elementos comunes -->
+<!ELEMENT emisor (#PCDATA)>
+<!ELEMENT receptor (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>

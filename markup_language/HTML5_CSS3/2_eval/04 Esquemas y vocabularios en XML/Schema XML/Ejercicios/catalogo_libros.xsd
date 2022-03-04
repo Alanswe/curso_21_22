@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+ 
+ <!-- ========== Elemento "catalogoLibros" ========== --> 
+ <xs:element name="catalogoLibro">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="libro" minOccurs="0" maxOccurs="unbounded"/>
+ </xs:sequence>
+ </xs:complexType>
+ </xs:element> 
+
+ 
+ <!-- ========== Elemento "libro" ========== -->
+ <xs:element name="libro">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="titulo" minOccurs="0" maxOccurs="unbounded"/>
+ <xs:element ref="autor" maxOccurs="unbounded"/>
+ <xs:element ref="fecha"/>
+ <xs:element ref="ISBN"/>
+ <xs:element ref="editor"/>
+ </xs:sequence>
+ <xs:attribute name="categoria" use="required">
+ <xs:simpleType>
+ <xs:restriction base="xs:string">
+ <xs:enumeration value="noficcion"/>
+ <xs:enumeration value="ficcion"/>
+ </xs:restriction>
+ </xs:simpleType>
+ </xs:attribute>
+ <xs:attribute name="enstock" type="xs:boolean" default="false"/>
+ <xs:attribute name="revisor" type="xs:string" default=""/>
+ </xs:complexType>
+ </xs:element>
+ 
+  <!-- =================================================== -->
+ <!-- Definiciones de otros elementos de tipos simples -->
+ <!-- =================================================== -->
+ <xs:element name="titulo" type="tipoNombre"/>
+ <xs:element name="autor" type="tipoNombre"/>
+ <xs:element name="mes" type="tipoMes"/>
+ <xs:element name="año" type="tipoaño"/>
+ <xs:element name="ISBN" type="tipoISBN"/>
+ <xs:element name="editor" type="tipoNombre"/>
+
+
+
+ <!-- ======================================== -->
+ <!--  Definiciones de tipos simples    -->
+ <!--========================================-->
+  <!-- ========== Tipo "tipoNombre" ========== -->
+ <xs:simpleType name="tipoNombre">
+ <xs:restriction base="xs:string">
+ <xs:minLength value="0"/>
+ <xs:maxLength value="100"/> 
+ </xs:restriction>
+ </xs:simpleType>
+ 
+ <!-- ========== Tipo "tipoMes" ============ -->
+ <xs:simpleType name="tipoMes">
+ <xs:restriction base="xs:positiveInteger">
+ <xs:minInclusive value="1"/>
+ <xs:maxInclusive value="12"/>
+ </xs:restriction>
+ </xs:simpleType>
+ 
+ <!-- ========== Tipo "tipoaño" ========== -->
+ <xs:simpleType name="tipoaño">
+ <xs:restriction base="xs:positiveInteger">
+ <xs:minInclusive value="1900"/>
+ <xs:maxInclusive value="2011"/> 
+ </xs:restriction>
+ </xs:simpleType>
+  
+ <!-- ========== Tipo "tipoISBN" ========== -->
+ <xs:simpleType name="tipoISBN">
+ <xs:restriction base="xs:string">
+ <xs:minLength value="13"/>
+ <xs:maxLength value="17"/> 
+ </xs:restriction>
+ </xs:simpleType>
+ 
+ 
+ <!-- ========================================== -->
+ <!-- Definiciones de elementos de tipo complejo -->
+ <!-- ========================================== -->
+ 
+ <!-- ========== Elemento "fecha" ========== -->
+ <xs:element name="fecha">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="mes" minOccurs="0" maxOccurs="1"/>
+ <xs:element ref="año"/>
+ </xs:sequence>
+ </xs:complexType>
+ </xs:element>
+ 
+ </xs:schema> 
+ 

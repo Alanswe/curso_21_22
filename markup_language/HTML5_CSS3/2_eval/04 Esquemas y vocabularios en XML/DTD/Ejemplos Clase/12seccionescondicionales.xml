@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE mensajes SYSTEM "12seccionescondicionales.dtd" [
+<!ENTITY % largo "INCLUDE">
+<!ENTITY % corto "IGNORE">
+]>
+<mensajes>
+<mensaje>
+      <titulo>Cita Jueves 23 febrero</titulo>
+       <emisor>Elsa</emisor>
+       <receptor>Claudio</receptor>
+      <contenido>Cita con Administrador a las 17:30h</contenido>
+      <palabras>6</palabras>
+</mensaje>
+</mensajes>

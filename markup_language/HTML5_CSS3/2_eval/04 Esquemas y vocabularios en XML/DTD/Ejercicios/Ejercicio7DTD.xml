@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE ediciones SYSTEM "Ejercicio7DTD.dtd">
+<ediciones>
+  <cabecera fecha="30/12/2009">
+    <titulo>Ediciones</titulo>
+    <contenido>Informe regional de ventas</contenido>
+    <descripcion>Descripcion: informe de ventas para las regiones Norte, Centro y Sur</descripcion>
+  </cabecera>
+  <tabla>
+    <region zona="norte">
+        <trim periodo="1">24000</trim>
+        <trim periodo="2">38600</trim>
+        <trim periodo="3">&info;</trim> <!-- en este caso en el navegador dará un error 
+         &info; porque sólo funcionan las entidades(creación de stitrings constantes) cuando se emplea con DTD interno-->
+        <trim periodo="4">&info;</trim>
+    </region>
+    <region zona="centro">
+        <trim periodo="1">&info;</trim>
+        <trim periodo="2">16080</trim>
+        <trim periodo="3">25000</trim>
+        <trim periodo="4">29000</trim>
+    </region>
+    <region zona="sur">
+        <trim periodo="1">27000</trim>
+        <trim periodo="2">31400</trim>
+        <trim periodo="3">40100</trim>
+        <trim periodo="4">30000</trim>
+    </region>
+  </tabla>
+</ediciones>

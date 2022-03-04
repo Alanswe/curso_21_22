@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE BDsms SYSTEM "04BDsms.dtd">
+<BDsms>
+    <sms>
+        <telefono>666234098</telefono>
+        <fecha>02/07/2020</fecha>
+        <hora>22:34</hora>
+        <mensaje>Aviso problema con puerta de garaje</mensaje>
+    </sms>
+        <sms>
+        <telefono>602900987</telefono>
+        <fecha>11/07/2020</fecha>
+        <hora>12:00</hora>
+        <mensaje>Cita médico</mensaje>
+        <mensaje>Traumatología</mensaje>
+    </sms>
+        <sms>
+        <telefono>666234098</telefono>
+        <fecha>23/08/2020</fecha>
+        <hora>09:40</hora>
+        <mensaje>Reunión Comunidad de vecinos</mensaje>
+    </sms>
+</BDsms>

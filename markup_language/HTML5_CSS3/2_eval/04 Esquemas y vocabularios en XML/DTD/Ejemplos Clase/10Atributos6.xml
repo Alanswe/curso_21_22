@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE videoteca [
+   <!ELEMENT videoteca (peliculas, directores)>
+   <!ELEMENT peliculas (pelicula)*>
+      <!ELEMENT pelicula (#PCDATA)>
+         <!ATTLIST pelicula codpel ID #REQUIRED>
+   <!ELEMENT directores (director)*>
+      <!ELEMENT director (#PCDATA)>
+         <!ATTLIST director filmografia IDREFS #REQUIRED>
+]>
+
+<videoteca>
+   <peliculas>
+      <pelicula codpel="P1">Avatar</pelicula>
+      <pelicula codpel="P2">Mystic River</pelicula>
+      <pelicula codpel="P3">The Terminator</pelicula>
+      <pelicula codpel="P4">Titanic</pelicula>
+   </peliculas>
+   <directores>
+      <director filmografia="P2">Clint Eastwood</director>
+      <director filmografia="P1 P3 P4">James Cameron</director>
+   </directores>
+</videoteca>

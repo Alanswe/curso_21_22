@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE ciudades [
+<!-- Ejemplo de documento XML con comentarios en su DTD interna-->
+<!ELEMENT ciudades (ciudad*)>
+<!ELEMENT ciudad (#PCDATA)>
+<!-- país es atributo del elemento ciudad -->
+<!ATTLIST ciudad país CDATA #REQUIRED>
+]>
+<ciudades>
+<ciudad país="Italia">Roma</ciudad>  <!-- comentario -->
+<ciudad país="Francia">París</ciudad>
+<ciudad país="">Viena</ciudad>
+</ciudades>

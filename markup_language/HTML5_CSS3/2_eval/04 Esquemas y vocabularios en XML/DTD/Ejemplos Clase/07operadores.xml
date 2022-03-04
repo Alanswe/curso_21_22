@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE clase SYSTEM "07operadores.dtd">
+<clase>
+    <profesor>Juan López López </profesor>
+    <alumno>
+    	<nombre>Casimiro</nombre>
+    	<apellido1>Ynoteveo</apellido1>
+    	<apellido2>Pi</apellido2>
+    	<dirección>Avenida de Hytasa 34, 2ºB</dirección>
+    	<correo>casimiro23@hotmail.com</correo>
+    	<nif>28098908P</nif>
+    	<materias>
+    	  <asignatura>Lengua Castellana</asignatura>
+    	  <asignatura>Historia</asignatura> 
+    	  <asignatura>Francés</asignatura> 
+    	</materias>
+    </alumno>
+    <alumno>
+    	<nombre>Ana</nombre>
+    	<dirección>Ronda del Tamarguillo 98, bajo D</dirección>
+    	<correo>anatamargo@gmail.com</correo>
+    	<teléfono>670900978</teléfono>
+    	<nie>X0523821F</nie>
+    	 <materias>
+    	  <asignatura>Lengua Castellana</asignatura>
+    	  <asignatura>Matemáticas</asignatura> 
+    	</materias>
+    </alumno>
+ </clase>

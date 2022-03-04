@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE pizzas SYSTEM "Ejercicio4DTD.dtd">
+<pizzas>
+   <ingredientes>
+      <ingrediente coding="HUE">Huevo</ingrediente>
+      <ingrediente coding="CHA">Champiñón</ingrediente>
+      <ingrediente coding="CHO">Chorizo</ingrediente>
+      <ingrediente coding="CAL">Calabacín</ingrediente>
+      <ingrediente coding="JAM">Jamón de York</ingrediente>
+      <ingrediente coding="ZAN">Zanahoria</ingrediente>
+
+   </ingredientes>
+   <tipos>
+      <tipo nombre="Especial" ingredientes="CAL CHA ZAN"/>
+      <tipo  ingredientes="CHA CHO JAM HUE"/>
+   </tipos>
+</pizzas>
