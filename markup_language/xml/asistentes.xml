@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!DOCTYPE asistentes>
-<asistentes xmlns:alum="alumnos" xmlns:prof="profesores">
-	<alum:nombre>Juan Romero Sánchez</alum:nombre>
-	<alum:nombre>Teresa Cercas Torres</alum:nombre>
-	<alum:nombre>Yolanda Córdoba Luna</alum:nombre>
-	<prof:nombre>Rosa Siles Pérez</prof:nombre>
-	<prof:nombre>Carmen Castro Martínez</prof:nombre>
-</asistentes>
