@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE productos_vendidos SYSTEM "05ejemplo.dtd">
+<?xml-stylesheet type="text/xsl" href="05ejemplo.xsl"?>
+<productos_vendidos>
+  <producto pid="100-201-01" precio="3,99" codventa="cod001">
+      <nombre>Espátula quitahielo</nombre>
+      <detalle>Espátula básica quitahielo de 4 pulgadas de ancho, asa de gomaespuma</detalle>
+  </producto>
+    <producto pid="123-267-03" precio="21,08" codventa="cod002">
+      <nombre>Herramienta Soldaduras</nombre>
+      <detalle>Bla bla bla  bla bla  bla bla  bla bla  bla bla bla bla  bla bla  bla bla  bla bla bla bla  bla bla  bla bla  bla bla</detalle>
+  </producto>
+      <producto pid="100-201-01" precio="20,00" codventa="cod003">
+      <nombre>Herramienta Soldaduras</nombre>
+      <detalle>Bla bla bla  bla bla  bla bla  bla bla  bla bla bla bla  bla bla  bla bla  bla bla bla bla  bla bla  bla bla  bla bla</detalle>
+  </producto>
+</productos_vendidos>

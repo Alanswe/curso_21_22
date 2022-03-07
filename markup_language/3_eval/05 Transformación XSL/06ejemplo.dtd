@@ -1,0 +1,8 @@
+<!ELEMENT catalog (cd+)>
+<!ELEMENT cd (title, artist, country,company, price, year)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT artist (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT company (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT year (#PCDATA)>

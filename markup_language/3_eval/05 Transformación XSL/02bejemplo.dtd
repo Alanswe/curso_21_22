@@ -1,0 +1,9 @@
+<!ELEMENT CentroRecreativo (Miembro+)>
+<!ELEMENT Miembro (Nombre, Telefono+)>
+<!ATTLIST Miembro
+          nivel CDATA #REQUIRED>
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Telefono (#PCDATA)>
+<!ATTLIST Telefono
+          tipo CDATA #REQUIRED>
+

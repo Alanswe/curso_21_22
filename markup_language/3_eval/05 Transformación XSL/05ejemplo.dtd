@@ -1,0 +1,8 @@
+<!ELEMENT productos_vendidos (producto+)>
+<!ELEMENT producto (nombre, detalle)>
+<!ATTLIST producto
+          pid CDATA #REQUIRED
+          precio CDATA #REQUIRED
+          codventa ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT detalle (#PCDATA)>

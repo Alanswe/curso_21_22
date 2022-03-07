@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libreria SYSTEM "03ejemplo.dtd">
+<?xml-stylesheet type="text/xsl" href="03ejemplo.xsl"?>
+<libreria>
+  <libro>
+    <titulo>Physics-based animation</titulo>
+    <autor>Lenny Erleben</autor>
+    <editor>Charles River Media</editor>
+    <isbn>978-1584503804</isbn>
+    <precio>50.00</precio>
+  </libro>
+  <libro>
+    <titulo>Principios de seguridad informática para usuarios</titulo>
+    <autor>Carlos Garre</autor>
+    <editor>Dykinson</editor>
+    <isbn>978-84-9849-998-8</isbn>
+    <precio>20.00</precio>
+  </libro>
+  <libro>
+    <titulo>Ejercicios complementarios de lógica digital</titulo>
+    <autor>Carlos Garre</autor>
+    <editor>Dykinson</editor>
+    <isbn>978-84-9849-703-8</isbn>
+    <precio>8.50</precio>
+    </libro>
+    <libro>
+      <titulo>El videojuego en la URSS</titulo>
+      <autor>Ronald  Klim</autor>
+      <editor>First Block</editor>
+      <isbn>978-84-3349-113-8</isbn>
+      <precio>11.50</precio>
+    </libro>
+
+</libreria>

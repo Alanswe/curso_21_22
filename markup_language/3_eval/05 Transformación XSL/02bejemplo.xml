@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE CentroRecreativo SYSTEM "02bejemplo.dtd">
+<?xml-stylesheet type="text/xsl" href="02bejemplo.xsl"?>
+<CentroRecreativo>
+
+        <Miembro nivel="basica">
+                <Nombre>Jose </Nombre>
+                <Telefono tipo="casa">5555-1234</Telefono>
+                <Telefono tipo="trabajo">5555-4321</Telefono>
+        </Miembro>
+
+        <Miembro nivel="premier">
+                <Nombre>David</Nombre>
+                <Telefono tipo="casa">3838-1234</Telefono>
+                <Telefono tipo="trabajo">3838-4321</Telefono>
+        </Miembro>
+
+        <Miembro nivel="basica">
+                <Nombre>Rogelio</Nombre>
+                <Telefono tipo="casa">8888-1234</Telefono>
+                <Telefono tipo="trabajo">8888-4321</Telefono>
+        </Miembro>
+
+</CentroRecreativo>
