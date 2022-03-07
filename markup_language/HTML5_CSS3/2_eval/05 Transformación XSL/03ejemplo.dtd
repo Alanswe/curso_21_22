@@ -1,7 +1,0 @@
-<!ELEMENT libreria (libro)+>
-<!ELEMENT libro (titulo, autor, editor, isbn, precio)>
-<!ELEMENT titulo (#PCDATA)>
-<!ELEMENT autor (#PCDATA)>
-<!ELEMENT editor (#PCDATA)>
-<!ELEMENT isbn (#PCDATA)>
-<!ELEMENT precio (#PCDATA)>
