@@ -1,0 +1,7 @@
+﻿<?xml  version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE autor SYSTEM "02autor.dtd">
+<autor>
+   <nombre>Tanmay Patil</nombre>
+   <empresa>TutorialsPoint</empresa>
+   <teléfono>(011) 123-4567</teléfono>
+</autor>

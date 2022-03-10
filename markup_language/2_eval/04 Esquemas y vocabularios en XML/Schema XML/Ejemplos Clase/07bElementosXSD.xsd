@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="personas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="persona" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attributeGroup ref="datosBasicos"/> <!-- más adelante defino el conjunto de atributos de PERSONA -->
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:attributeGroup name="datosBasicos">
+    <xs:attribute name="nombre" type="xs:string"/>
+    <xs:attribute name="edad" type="xs:positiveInteger"/>
+    <xs:attribute name="pais" type="xs:string"/>
+  </xs:attributeGroup>
+
+</xs:schema>

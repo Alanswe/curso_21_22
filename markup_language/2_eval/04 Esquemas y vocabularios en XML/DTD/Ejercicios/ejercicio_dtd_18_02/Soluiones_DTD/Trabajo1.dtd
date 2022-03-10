@@ -1,0 +1,16 @@
+<!ENTITY portada1 SYSTEM "martenebroso.jpg" NDATA jpg >
+<!ENTITY portada2 SYSTEM "55díasenPiolín.jpg" NDATA jpg >
+<!NOTATION jpg SYSTEM "image/jpg" >
+<!ELEMENT biblioteca (libro)+ >
+<!ELEMENT libro (autor+, foto?, editorial?, edicion, isbn, donacion?, ubicacion) >
+    <!ATTLIST libro codigo ID #REQUIRED
+                    titulo CDATA #REQUIRED>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT foto EMPTY >
+    <!ATTLIST foto imagen ENTITY #IMPLIED>
+<!ELEMENT editorial (#PCDATA) >
+<!ELEMENT edicion (#PCDATA) >
+<!ELEMENT isbn (#PCDATA) >
+<!ELEMENT donacion EMPTY >
+<!ELEMENT ubicacion EMPTY >
+  <!ATTLIST ubicacion sede (norte | centro | sur) #REQUIRED >

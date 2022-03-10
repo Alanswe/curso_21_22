@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes</title>
+    <style>
+        /* body {
+        	background-image: url("imagenes/fondo.jpg");
+            background-repeat: no-repeat; 
+            background-size:cover;
+        } 
+        div {
+            color:black;
+            background-image: url("imagenes/fondo.jpg");
+            background-size: cover;
+            width: 200px ;
+            height: 300px;
+            text-align: center;
+        }
+        span {
+            color:white;    
+        }
+        */
+    </style>
+</head>
+<body>
+    <div>
+        <span>Hola esto</span> es una prueba.
+    </div>
+    <img src="imagenes/logos.jpg">
+    <img src="imagenes/logos.jpg" style="width: 100px; height: 100px;">
+    <img src="imagenes/logos.jpg" style="width: 200px; height: 200px;" 
+    alt="Logotipo de la inmobiliaria" 
+     title="STAY HOMESS" 
+     longdesc="recursos/explicacionlogotipo.txt">
+<hr>
+<picture>
+    <source media="(min-width: 900px)" srcset="imagenes/logosgrande.jpg">
+    <source media="(min-width: 550px)" srcset="imagenes/logosmediana.jpg">
+    <img src="imagenes/logos.jpg"> <!--alternativa por si no soporta picture el navegador-->
+</picture>
+
+
+
+<figure> <!-- etiqueta de bloque-->
+    <img src="imagenes/logos.jpg" alt="logo de la empresa">
+    <figcaption>El logotipo oficial de la empresa</figcaption>
+</figure>
+<figure> 
+    <img src="imagenes/logos.jpg" alt="logo de la empresa">
+    <figcaption>El logotipo oficial de la empresa</figcaption>
+</figure>
+
+
+
+</body>
+</html>

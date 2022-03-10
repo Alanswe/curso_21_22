@@ -1,0 +1,13 @@
+<!ENTITY info "NO_INFO">
+<!ELEMENT ediciones (cabecera, tabla)>
+<!ELEMENT cabecera (titulo, contenido, descripcion)>
+  <!ATTLIST cabecera fecha CDATA #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+
+<!ELEMENT tabla (region+)>
+<!ELEMENT region (trim+)>
+  <!ATTLIST region zona (norte | centro | sur) #REQUIRED>
+<!ELEMENT trim (#PCDATA)>
+    <!ATTLIST trim periodo (1 | 2 | 3| 4) #REQUIRED>

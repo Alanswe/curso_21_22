@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE becas SYSTEM "06Entidadesparametricas.dtd">
+<becas>
+  <beca>
+    <alumno>
+      <dni>28090787E</dni>
+      <calle>Fernando Tirado</calle>
+      <ciudad>Sevilla</ciudad>
+      <cp>41018</cp>
+    </alumno> 
+    <ies>
+      <centro>Luca de Tena</centro>
+      <calle>Pirineos</calle>
+      <ciudad>Sevilla</ciudad>
+      <cp>41018</cp>
+    </ies>  
+  </beca>
+</becas>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE deportistas [
+   <!ELEMENT deportistas (futbol | F1 | tenis)*>
+   <!ELEMENT futbol (#PCDATA)>
+   <!ELEMENT F1 (#PCDATA)>
+      <!ATTLIST F1 país (ESP | FRA | ITA | ALE) "ESP">
+      <!ATTLIST F1 fecha_de_nacimiento CDATA #IMPLIED>
+      <!ATTLIST F1 equipo (Mcl | Fer | Ren) #REQUIRED>
+   <!ELEMENT tenis (#PCDATA)>
+]>
+
+<deportistas>
+   <F1 fecha_de_nacimiento="03/07/1987" equipo="Fer" país="">Sebastian Vettel</F1>
+   <F1 equipo="Mcl">Fernando Alonso</F1>
+   <tenis>Rafael Nadal</tenis>
+</deportistas>

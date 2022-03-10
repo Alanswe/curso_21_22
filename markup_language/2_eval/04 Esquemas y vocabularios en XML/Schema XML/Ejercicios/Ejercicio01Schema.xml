@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<curso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:noNamespaceSchemaLocation="Ejercicio01Schema.xsd">
+
+   <denominacion>Historia de los videojuegos</denominacion>
+   <numAlumn>12</numAlumn>
+   <fechaIni>2022-03-12</fechaIni>
+   <online>true</online>
+</curso>

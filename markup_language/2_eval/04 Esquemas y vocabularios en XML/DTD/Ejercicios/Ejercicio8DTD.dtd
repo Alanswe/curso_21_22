@@ -1,0 +1,12 @@
+<!--<!ELEMENT aviso (titulo, (parrafo+, grafico*)+)+> este también valdría pero es más enrevesado -->
+<!ELEMENT aviso (titulo | parrafo | grafico)*>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT parrafo (#PCDATA)>
+<!ELEMENT grafico (#PCDATA)>
+  <!ATTLIST grafico foto ENTITY #REQUIRED>
+   <!ENTITY foto1 SYSTEM "noticia1.png" NDATA png>
+   <!ENTITY foto2 SYSTEM "noticia2.png" NDATA png>
+   <!ENTITY foto3 SYSTEM "noticia3.png" NDATA png>
+   <!ENTITY foto4 SYSTEM "noticia4.png" NDATA png>
+   <!ENTITY foto5 SYSTEM "noticia5.png" NDATA png>
+   <!NOTATION png SYSTEM "image/png">

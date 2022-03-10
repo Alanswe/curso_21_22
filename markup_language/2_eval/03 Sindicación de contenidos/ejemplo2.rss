@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Titulo del Canal de RSS</title>
+  <link>http://www.tudominio.com</link>
+  <description>Descripción del canal de tu sitio</description>
+  <language>es-ES</language>
+
+  <image>
+    <title>Título de la Imagen</title>
+    <url>http://www.tudominio.com/logotipo-del-rss.png</url>
+    <link>http://www.tudominio.com</link>
+    <width>90</width>
+    <height>36</height>
+  </image>
+
+  <item>
+    <title>Titulo del primer artículo</title>
+    <link>http://www.tudominio.com/ruta/articulo/primero.html</link>
+    <description>
+      Breve descripción del contenido de este artículo concreto. Puedes usar un
+      par de líneas para crear esta descripción, aunque no hay ningún tope máximo.     </description>
+  </item>
+
+  <item>
+    <title>Título de un segundo artículo</title>
+    <link>http://www.tudominio.com/ruta/articulo/segundo.html</link>
+    <description>
+      Breve descripción del contenido del otro artículo. Puedes usar un
+      par de líneas para crear esta descripción, aunque no hay ningún tope máximo.     </description>
+  </item>
+
+</channel>
+</rss> 

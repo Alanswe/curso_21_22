@@ -1,0 +1,31 @@
+﻿<?xml version='1.0' encoding="UTF-8" standalone="no"?>
+ <!DOCTYPE personas SYSTEM "Ejercicio9DTD.dtd"> 
+<personas>
+ <persona>
+    <nombre>Juan PARDO</nombre>
+    <nacimiento dia="10" mes="Abril" año="1982"/>
+    <direccion>
+       <calle>Caoba, 1</calle>
+       <poblacion>Madrid</poblacion>
+       <provincia>Madrid</provincia>
+       <cpostal>28005</cpostal>
+    </direccion>
+    <varon />
+ </persona>
+ <persona>
+    <nombre>María López</nombre>
+    <direccion>
+       <calle>Roncato, 1</calle>
+       <poblacion>Illescas</poblacion>
+       <provincia>Toledo</provincia>
+       <cpostal>45200</cpostal>
+    </direccion>
+    <direccion>
+       <calle>Paseo de la Esperanza, 15 - 1º A</calle>
+       <poblacion>Madrid</poblacion>
+       <provincia>Madrid</provincia>
+       <cpostal>28005</cpostal>
+    </direccion>
+    <hembra />
+ </persona>
+</personas>

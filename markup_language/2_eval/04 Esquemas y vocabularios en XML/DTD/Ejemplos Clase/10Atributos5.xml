@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE videoteca [
+   <!ELEMENT videoteca (directores, peliculas)>
+   <!ELEMENT directores (director)*>
+      <!ELEMENT director (#PCDATA)>
+         <!ATTLIST director coddir ID #REQUIRED>
+   <!ELEMENT peliculas (pelicula)*>
+      <!ELEMENT pelicula (#PCDATA)>
+         <!ATTLIST pelicula direccion IDREF #REQUIRED>
+]>
+
+<videoteca>
+   <directores>
+      <director coddir="CE">Clint Eastwood</director>
+      <director coddir="JC">James Cameron</director>
+   </directores>
+   <peliculas>
+      <pelicula direccion="JC">Avatar</pelicula>
+      <pelicula direccion="CE">Mystic River</pelicula>
+      <pelicula direccion="JC">Titanic</pelicula>
+   </peliculas>
+</videoteca>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Ejercicio05Schema.xsd">
+  <ficha codigo="sdf4f">
+    <nombre>Juan</nombre>
+    <edad>23</edad>
+  </ficha>
+    <ficha codigo="zck4g">
+    <nombre>Luisa</nombre>
+    <edad>42</edad> 
+</ficha>
+    <ficha codigo="ljs8d">
+    <nombre>Carlos</nombre>
+    <edad>62</edad>    
+  </ficha>
+  </fichas>

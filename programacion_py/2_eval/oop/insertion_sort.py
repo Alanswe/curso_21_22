@@ -5,22 +5,25 @@ class Insort():
         self.lista_des = lista_des
 
     def ordena(self):
-        for x in range(len(self.lista_des)):
-            valor_1 = 0
-            valor_2 = 0
-            posicion_1 = 0
-            posicion_2 = 1
+            lista = list(self.lista_des)
+            posi = 0
+            posicion = lista[posi]
 
-            if self.lista_des[posicion_1] > self.lista_des[posicion_2]:
-                valor_1 = self.lista_des[posicion_1]
-                valor_2 = self.lista_des[posicion_2]
-                self.lista_des[posicion_2] = valor_1
-                self.lista_des[posicion_1] = valor_2
-            else:
-                pass
-            
-            posicion_2 += 1
-            posicion_1 += 1
+            for i in range(len(lista)):
+                for i in self.lista_des:
+                    valor_1 = 0
+                    valor_2 = 0
+                    if i < posicion:
+                        posi +=1
+                        continue
+                    else:
+                        valor_1 = i
+                        valor_2 = posicion
+                        posicion = valor_1
+                        lista[i] = valor_2
+                        posi +=1
+
+
   
         # for x in self.lista_des:
         #     valor_1 = 0

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<centro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="08ElementosXSD.xsd">
+   <usuario>
+      <nombre>Eva</nombre>
+      <edad>25</edad>
+      <pais>Francia</pais>
+
+   </usuario>
+   <usuario>
+      <nombre>Giovanni</nombre>
+      <edad>26</edad>
+      <pais>Italia</pais>
+
+   </usuario>
+    <cuidador>
+      <nombre>Giovanni</nombre>
+      <edad>26</edad>
+      <pais>Italia</pais>
+      <telefono>700345888</telefono>
+   </cuidador>
+</centro>

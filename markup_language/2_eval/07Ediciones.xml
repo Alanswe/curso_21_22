@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ediciones SYSTEM "07Ediciones.dtd">
+<ediciones>
+  <cabecera>
+    <titulo>Ediciones</titulo>
+    <contenido>Informe regional de ventas</contenido>
+    <descripcion>Descripcion: informe de ventas para las regiones Norte, Centro y Sur</descripcion>
+    <fecha>Fecha: 30/12/2009</fecha>
+  </cabecera>
+  <tabla>
+    <region>
+      <norte>Norte
+        <trim>1</trim>
+          <lib>24000</lib>
+        <trim>2</trim>
+          <lib>38600</lib>
+        <trim>3</trim>
+          <lib></lib>
+        <trim>4</trim>
+          <lib></lib>
+      </norte>
+    </region>
+    <region>
+      <centro>Centro
+        <trim>1</trim>
+          <lib></lib>
+        <trim>2</trim>
+          <lib>16080</lib>
+        <trim>3</trim>
+          <lib>25000</lib>
+        <trim>4</trim>
+          <lib>29000</lib>
+      </centro>
+    </region>
+    <region>
+      <sur>Sur
+        <trim>1</trim>
+          <lib>27000</lib>
+        <trim>2</trim>
+          <lib>31400</lib>
+        <trim>3</trim>
+          <lib>40100</lib>
+        <trim>4</trim>
+          <lib>30000</lib>
+      </sur>
+    </region>
+    <trimestre>Trimestre</trimestre>
+    <libros_vendidos>Libros vendidos</libros_vendidos>
+  </tabla>
+</ediciones>

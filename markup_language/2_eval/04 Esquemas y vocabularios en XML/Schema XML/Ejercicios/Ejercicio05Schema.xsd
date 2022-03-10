@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="fichas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ficha" minOccurs="3" maxOccurs="5" type="tipoFicha"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  
+  <xs:complexType name="tipoFicha">
+    <xs:sequence>
+      <xs:element name="nombre" type="xs:string"/>
+      <xs:element name="edad" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="codigo">
+      <xs:simpleType>
+        <xs:restriction base="xs:ID">
+          <xs:pattern value="[a-z][a-z][a-z][0-9][a-z]"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  
+</xs:schema>

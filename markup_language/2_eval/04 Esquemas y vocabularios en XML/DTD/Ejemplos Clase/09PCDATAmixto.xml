@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE localidades [
+<!ELEMENT localidades (provincia*)>
+<!ELEMENT provincia (#PCDATA | ciudad | codigo_postal)*>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT codigo_postal (#PCDATA)>
+]>
+<localidades>
+<provincia>
+Navarra
+<ciudad>Estella</ciudad>
+<codigo_postal>31015</codigo_postal>
+<ciudad>Tafalla</ciudad>
+</provincia>
+<provincia>
+Valencia
+<codigo_postal>46520</codigo_postal>
+</provincia>
+</localidades>

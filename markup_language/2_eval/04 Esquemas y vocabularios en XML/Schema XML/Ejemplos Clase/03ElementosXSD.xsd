@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="bingo">
+    <xs:complexType>
+    <xs:sequence>
+      <xs:element name="bola">
+          <xs:complexType>
+            <xs:attribute name="numero" type="xs:positiveInteger" default="90"/> <!-- como no indicamos nada,el atributo es opcional-->
+          </xs:complexType>
+      </xs:element>
+      <xs:element name="nombrePopular" type="xs:string"/>
+      </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+</xs:schema>

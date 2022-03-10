@@ -1,3 +1,0 @@
-<!ELEMENT nombre (#PCDATA)>
-<!ELEMENT descripcion (#PCDATA)>
-<!ELEMENT url (#PCDATA)>
