@@ -9,3 +9,5 @@ class Persona():
 
     def __str__(self) -> str:
         return f'Nombre: {self.nombre}, Apellidos : {self.apellido1} {self.apellido2}, DNI: {self.dni}'
+
+    # getters y setters con property y uigu.metod
