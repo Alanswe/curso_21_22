@@ -1,0 +1,4 @@
+    table, tr , td, th{
+      border:2px black solid;}
+      tr td:first-child {text-align:right;}
+    .alto { background-color:red;}    

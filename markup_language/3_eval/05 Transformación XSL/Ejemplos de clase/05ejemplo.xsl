@@ -11,6 +11,7 @@
         <h1>Catálogo</h1>
         <table>
           <xsl:for-each select="productos_vendidos/producto">
+          <xsl:sort  select="@codventa"/>
             <tr>
                   <td class="cod">Código: <xsl:value-of select="@codventa"/></td>
             </tr>

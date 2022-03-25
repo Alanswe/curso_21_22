@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="08ejemplo.xsl"?>
+<ventas>
+<producto>
+<denominacion>Iglepiggle</denominacion>
+<pais>Alemania</pais>
+<precio>100.00</precio>
+<año>2009</año>
+</producto>
+<producto>
+<denominacion>Rustica Cale</denominacion>
+<pais>Francia</pais>
+<precio>19.99</precio>
+<año>2012</año>
+</producto>
+<producto>
+<denominacion>Sandy flash</denominacion>
+<pais>Gran Bretaña</pais>
+<precio>78,29</precio>
+<año>2019</año>
+</producto>
+<producto>
+<denominacion>Augusta Fresh</denominacion>
+<pais>Gran Bretaña</pais>
+<precio>13,00</precio>
+<año>2004</año>
+</producto>
+</ventas>

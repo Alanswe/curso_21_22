@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="07ejemplo.xsl"?>
+<ventas>
+  <producto>
+    <denominacion>Iglepiggle</denominacion>
+    <pais>Alemania</pais>
+    <precio>100.00</precio>
+     <año>2009</año>
+  </producto>
+  <producto>
+    <denominacion>Rustica Cale</denominacion>
+    <pais>Francia</pais>
+    <precio>19.99</precio>
+    <año>2012</año>
+  </producto>
+</ventas>
