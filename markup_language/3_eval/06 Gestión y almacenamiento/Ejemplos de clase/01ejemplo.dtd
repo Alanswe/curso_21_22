@@ -1,0 +1,14 @@
+   <!ELEMENT Libros (libro)*>
+      <!ELEMENT libro (Cod_Libro, Titulo, Editorial, Edicion, ISBN, NumPaginas, Autores)>
+	<!ELEMENT Cod_Libro (#PCDATA)>
+	<!ELEMENT Titulo (#PCDATA)>
+	<!ELEMENT Editorial (#PCDATA)>
+	<!ELEMENT Edicion (#PCDATA)>
+	<!ELEMENT ISBN (#PCDATA)>
+	<!ELEMENT NumPaginas (#PCDATA)>
+	<!ELEMENT Autores (autor)+>
+		<!ELEMENT autor (Cod_Autor, Nombre, Apellidos, FechaNacimiento)>
+		<!ELEMENT Cod_Autor (#PCDATA)>
+		<!ELEMENT Nombre (#PCDATA)>
+		<!ELEMENT Apellidos (#PCDATA)>
+		<!ELEMENT FechaNacimiento (#PCDATA)>	

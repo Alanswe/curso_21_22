@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tienda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:noNamespaceSchemaLocation="02ejemplo.xsd">
+  <clientes>
+    <cliente idcliente="_22">
+      <nombre>MANUEL FERNÁNDEZ HERNÁNDEZ</nombre>
+      <ciudad>Alicante</ciudad>
+    </cliente>
+    <cliente idcliente="_12">
+      <nombre>ANA LAFUENTE BROTONS</nombre>
+      <ciudad>Alicante</ciudad>    
+    </cliente>
+    <cliente idcliente="_19">
+       <nombre>JUANA GÓMEZ GÓMEZ</nombre>
+      <ciudad>Alicante</ciudad>   
+    </cliente>
+  </clientes>
+<articulos>
+<articulo codigo="A001">
+<modelo>EOS 550d</modelo>
+<marca>CANON</marca>
+<pvp>379.89</pvp>
+</articulo>
+<articulo codigo="A002">
+<modelo>Slim 1.16</modelo>
+<marca>PARROT</marca>
+<pvp>78.99</pvp>
+</articulo>
+<articulo codigo="A005">
+<modelo>PX730</modelo>
+<marca>EPSON</marca>
+<pvp>250.00</pvp>
+</articulo>
+</articulos>
+<compras>
+<compra idcliente="_22" codigo="A001">
+  <unidades>1</unidades>
+  <fecha>2019-09-03T14:00:00</fecha>
+</compra>
+<compra idcliente="_22" codigo="A005">
+  <unidades>2</unidades>
+  <fecha>2019-06-09T12:35:41</fecha>
+</compra>
+<compra idcliente="_12" codigo="A005">
+  <unidades>1</unidades>
+  <fecha>2019-07-13T11:30:40</fecha>
+</compra>
+</compras>
+</tienda>

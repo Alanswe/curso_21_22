@@ -1,0 +1,19 @@
+   <!ELEMENT biblioteca (Libros, Autores)>
+   <!ELEMENT Libros (libro)+>
+      <!ELEMENT libro (Titulo, Editorial, Edicion, ISBN, NumPaginas, autoria)>
+	<!ELEMENT Titulo (#PCDATA)>
+	<!ELEMENT Editorial (#PCDATA)>
+	<!ELEMENT Edicion (#PCDATA)>
+	<!ELEMENT ISBN (#PCDATA)>
+	<!ELEMENT NumPaginas (#PCDATA)>
+	<!ELEMENT autoria EMPTY>
+      <!ATTLIST autoria Cod_Autor IDREF #REQUIRED>
+	<!ELEMENT Autores (autor)+>
+		<!ELEMENT autor (Nombre, Apellidos, FechaNacimiento)>
+		<!ELEMENT IdAutor (#PCDATA)>
+		<!ELEMENT Nombre (#PCDATA)>
+		<!ELEMENT Apellidos (#PCDATA)>
+		<!ELEMENT FechaNacimiento (#PCDATA)>	
+				
+			<!ATTLIST libro Cod_Libro ID #REQUIRED>
+			<!ATTLIST autor IdAutor ID #REQUIRED>

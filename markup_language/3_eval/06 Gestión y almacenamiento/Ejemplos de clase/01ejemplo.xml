@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Libros SYSTEM "01OPTejemplo.dtd">
+<Libros>
+  <libro>
+    <Cod_Libro>1</Cod_Libro>
+    <Titulo>Don Quijote de la Mancha</Titulo>
+    <Editorial>Juan de la Cuesta</Editorial>
+    <Edicion>3</Edicion>
+    <ISBN>9788466745840</ISBN>
+   <NumPaginas>176</NumPaginas> 
+    <Autores>
+      <autor>
+        <Cod_Autor>1</Cod_Autor>
+        <Nombre>Miguel</Nombre>
+        <Apellidos>de Cervantes Saavedra</Apellidos>
+        <FechaNacimiento>29/09/1547</FechaNacimiento>
+      </autor>
+    </Autores>
+  </libro>
+    <libro>
+    <Cod_Libro>2</Cod_Libro>
+    <Titulo>La Celestina</Titulo>
+    <Editorial>Maxtor</Editorial>
+    <Edicion>1</Edicion>
+    <ISBN>9788471664938</ISBN>
+   <NumPaginas>320</NumPaginas> 
+    <Autores>
+      <autor>
+        <Cod_Autor>2</Cod_Autor>
+        <Nombre>Fernando</Nombre>
+        <Apellidos>de Rojas</Apellidos>
+        <FechaNacimiento>01/01/1470</FechaNacimiento>
+      </autor>
+    </Autores>
+  </libro>
+</Libros>

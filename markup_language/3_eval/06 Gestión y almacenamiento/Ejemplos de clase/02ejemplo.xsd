@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="tienda">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="clientes"/>
+        <xs:element ref="articulos"/>
+        <xs:element ref="compras"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+<xs:element name="clientes">
+ <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cliente" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence> 
+ </xs:complexType>
+</xs:element>  
+  
+<xs:element name="articulos">
+ <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="articulo" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence> 
+ </xs:complexType>
+</xs:element>    
+  
+<xs:element name="compras">
+ <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="compra" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence> 
+ </xs:complexType>
+</xs:element>    
+  
+  <xs:element name="cliente">
+ <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="tipoNombre"/>
+        <xs:element name="ciudad" type="tipoCiudad"/>
+      </xs:sequence> 
+      <xs:attribute name="idcliente" use="required" type="xs:ID"/>
+ </xs:complexType>
+</xs:element>  
+
+  <xs:element name="articulo">
+ <xs:complexType>
+      <xs:sequence>
+        <xs:element name="modelo" type="tipoModelo"/>
+        <xs:element name="marca" type="tipoMarca"/>
+        <xs:element name="pvp" type="tipoPvp"/>
+      </xs:sequence> 
+      <xs:attribute name="codigo" use="required" type="xs:ID"/>
+ </xs:complexType>
+</xs:element>  
+
+  <xs:element name="compra">
+ <xs:complexType>
+      <xs:sequence>
+        <xs:element name="unidades" type="xs:integer"/>
+        <xs:element name="fecha" type="xs:dateTime"/>
+      </xs:sequence> 
+      <xs:attribute name="idcliente" use="required" type="xs:IDREF"/> <!-- clave ajena -->
+      <xs:attribute name="codigo" use="required" type="xs:IDREF"/> <!-- clave ajena -->
+ </xs:complexType>
+</xs:element>  
+
+<!-- Definición de tipos -->
+<xs:simpleType name="tipoNombre">
+  <xs:restriction base="xs:string">
+    <xs:maxLength value="100"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipoCiudad">
+  <xs:restriction base="xs:string">
+    <xs:maxLength value="50"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipoModelo">
+  <xs:restriction base="xs:string">
+    <xs:maxLength value="50"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipoMarca">
+  <xs:restriction base="xs:string">
+    <xs:maxLength value="35"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipoPvp">
+  <xs:restriction base="xs:decimal">
+    <xs:fractionDigits value="2"/>
+  </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>
