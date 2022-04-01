@@ -18,6 +18,8 @@
     <ISBN>9788471664938</ISBN>
    <NumPaginas>320</NumPaginas> 
      <autoria Cod_Autor="A2"></autoria> 
+          <autoria Cod_Autor="A1"></autoria> 
+
    </libro>
    </Libros>
     <Autores>
@@ -27,6 +29,11 @@
         <FechaNacimiento>29/09/1547</FechaNacimiento>
       </autor>
       <autor IdAutor="A2">
+        <Nombre>Fernando</Nombre>
+        <Apellidos>de Rojas</Apellidos>
+        <FechaNacimiento>01/01/1470</FechaNacimiento>
+      </autor>
+            <autor IdAutor="A3">
         <Nombre>Fernando</Nombre>
         <Apellidos>de Rojas</Apellidos>
         <FechaNacimiento>01/01/1470</FechaNacimiento>

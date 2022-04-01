@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE Libros SYSTEM "01OPTejemplo.dtd">
+<!DOCTYPE Libros SYSTEM "01ejemplo.dtd">
 <Libros>
   <libro>
     <Cod_Libro>1</Cod_Libro>

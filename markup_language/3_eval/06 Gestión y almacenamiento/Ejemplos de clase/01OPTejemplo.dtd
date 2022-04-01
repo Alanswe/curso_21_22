@@ -1,6 +1,6 @@
    <!ELEMENT biblioteca (Libros, Autores)>
    <!ELEMENT Libros (libro)+>
-      <!ELEMENT libro (Titulo, Editorial, Edicion, ISBN, NumPaginas, autoria)>
+      <!ELEMENT libro (Titulo, Editorial, Edicion, ISBN, NumPaginas, autoria+)>
 	<!ELEMENT Titulo (#PCDATA)>
 	<!ELEMENT Editorial (#PCDATA)>
 	<!ELEMENT Edicion (#PCDATA)>
