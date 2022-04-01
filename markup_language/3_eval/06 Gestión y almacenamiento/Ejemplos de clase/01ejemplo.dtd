@@ -1,4 +1,4 @@
-   <!ELEMENT Libros (libro)*>
+   <!ELEMENT Libros (libro)*><!-- raíz de XML-->
       <!ELEMENT libro (Cod_Libro, Titulo, Editorial, Edicion, ISBN, NumPaginas, Autores)>
 	<!ELEMENT Cod_Libro (#PCDATA)>
 	<!ELEMENT Titulo (#PCDATA)>
