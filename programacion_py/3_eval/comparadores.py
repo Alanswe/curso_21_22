@@ -31,6 +31,7 @@ obj_2 = Circulo(3)
 obj_3 = Circulo(4)
 print(obj.__eq__(obj_2)) # tiene que dar false
 print(obj.__eq__(obj_3)) # tiene que dar true
+print(obj == obj_3) # da true
 """
 Dice false si el objeto 2 es diferente al objeto 1
 """
