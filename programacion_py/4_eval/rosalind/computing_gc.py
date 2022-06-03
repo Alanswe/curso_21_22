@@ -29,12 +29,9 @@ Rosalind_0808
 60.919540
 
 """
-archivo = '/home/alan/Documents/GitHub/curso_21_22/programacion_py/4_eval/rosalind/archivo_computing_gc.txt'
+import operator # Es para usar la funcion max()
 
-from pprint import pprint
-import operator
-
-arch = "/home/alan/Documents/GitHub/curso_21_22/programacion_py/4_eval/rosalind/archivo_computing_gc.txt"
+archivo = "/home/alan/Documents/GitHub/curso_21_22/programacion_py/4_eval/rosalind/archivo_computing_gc.txt"
 
 def porcentaje(cadena):
     total = cadena.count('C') + cadena.count('G')
@@ -62,11 +59,8 @@ def gc_content(archivo):
     max_key = max(cadenas, key = cadenas.get)
     return max_key, cadenas[max_key]
     
-
-
-resp = gc_content(arch)
+resp = gc_content(archivo)
 print(f'{resp[0]}\n{resp[1]:.6f}')
-
 
 """
 import operator
@@ -74,5 +68,4 @@ import operator
 stats = {'key1':20, 'key2':35, 'key3': 44}
 max_key = max(stats, key = stats.get)
 print(max_key)
-
 """
