@@ -13,24 +13,66 @@ Return: The ID of the string having the highest GC-content, followed by the GC-c
 
 Sample Dataset
 
-    >Rosalind_6404
-    CCTGCGGAAGATCGGCACTAGAATAGCCAGAACCGTTTCTCTGAGGCTTCCGGCCTTCCC
-    TCCCACTAATAATTCTGAGG
-
-    >Rosalind_5959
-    CCATCGGTAGCGCATCCTTAGTCCAATTAAGTCCCTATCCAGGCGCTCCGCCGAAGGTCT
-    ATATCCATTTGTCAGCAGACACGC
-
-    >Rosalind_0808
-    CCACCCTCGTGGTATGGCTAGGCATTCAGGAACCGGAGAACGCTTCAGACCAGCCCGGAC
-    TGGGAACCTGCGGGCAGTAGGTGGAAT
+>Rosalind_6404
+CCTGCGGAAGATCGGCACTAGAATAGCCAGAACCGTTTCTCTGAGGCTTCCGGCCTTCCC
+TCCCACTAATAATTCTGAGG
+>Rosalind_5959
+CCATCGGTAGCGCATCCTTAGTCCAATTAAGTCCCTATCCAGGCGCTCCGCCGAAGGTCT
+ATATCCATTTGTCAGCAGACACGC
+>Rosalind_0808
+CCACCCTCGTGGTATGGCTAGGCATTCAGGAACCGGAGAACGCTTCAGACCAGCCCGGAC
+TGGGAACCTGCGGGCAGTAGGTGGAAT
 
 Sample Output
-    Rosalind_0808
-    60.919540
+
+Rosalind_0808
+60.919540
 
 """
 archivo = '/home/alan/Documents/GitHub/curso_21_22/programacion_py/4_eval/rosalind/archivo_computing_gc.txt'
 
-def gc_contenido(archivo):
-    with open(archivo,'r') as manejador:
+from pprint import pprint
+import operator
+
+arch = "/home/alan/Documents/GitHub/curso_21_22/programacion_py/4_eval/rosalind/archivo_computing_gc.txt"
+
+def porcentaje(cadena):
+    total = cadena.count('C') + cadena.count('G')
+    return total / len(cadena) * 100
+
+def gc_content(archivo):
+    cadenas = {}
+    datos = ''
+    clave = ''
+    
+    with open(archivo, 'r') as manejador:
+        for linea in manejador:
+            if linea.startswith('>'):
+                if clave:
+                    cadenas[clave] = datos
+                    datos = ''
+                clave = linea[1:].replace('\n','')
+            else:
+                datos += linea.replace('\n','')
+        cadenas[clave] = datos
+    
+    for k, v in cadenas.items():
+        cadenas[k] = porcentaje(v)
+
+    max_key = max(cadenas, key = cadenas.get)
+    return max_key, cadenas[max_key]
+    
+
+
+resp = gc_content(arch)
+print(f'{resp[0]}\n{resp[1]:.6f}')
+
+
+"""
+import operator
+
+stats = {'key1':20, 'key2':35, 'key3': 44}
+max_key = max(stats, key = stats.get)
+print(max_key)
+
+"""
