@@ -1,6 +1,13 @@
-                                    # Ejercicio 4 de Alan Sweere Segovia
-# Clase que admita ancho y alto en cocnstructor
+# Ejercicio 4 de Alan Sweere Segovia
+"""
+4.	Escriba una clase que admita como parámetros en su constructor las variables 'ancho' y 'alto'.
+Esta clase debe crear una matriz de tamaño 'ancho' x 'alto' llena de ceros y debe tener un método que permita imprimirla por pantalla.
+
+"""
+
 from pprint import pprint
+
+# Clase que admita ancho y alto en constructor
 class ejer_4():
     ancho = 0
     alto = 0
@@ -35,4 +42,3 @@ print('-----------------------------------------------------')
 matriz_2.en_pantalla()
 print('-----------------------------------------------------')
 matriz_3.en_pantalla()
-

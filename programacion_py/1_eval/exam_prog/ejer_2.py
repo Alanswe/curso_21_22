@@ -1,4 +1,16 @@
-                                    # Ejercicio 2 de Alan Sweere Segovia
+# Ejercicio 2 de Alan Sweere Segovia
+"""
+2.	 Crear una clase Persona, que permita recopilar los siguientes datos referidos a una persona:
+
+-	Nombre
+-	Apellidos
+-	Edad
+-	DNI
+
+Al escribir una expresión como print(pers), debe mostrar todos los datos de la persona 'pers'
+
+"""
+
 class Persona():
     nombre = None
     apellidos = None
@@ -11,19 +23,17 @@ class Persona():
         self.edad = edad
         self.dni = dni
 
-    def pers(self):
+    def datos(self):
         return 'Datos de persona: ', self.nombre, self.apellidos, self.edad, self.dni
 
 # Persona de prueba ----------------------------------------------------------------------
 
-# persona_1 = Persona('Alan', 'Sweere', 24, '2222235222H') # esto es de antes del ejercicio 2
-lista_personas = [Persona('Alan', 'Sweere', 24, '2222235222H'),Persona('Pepe', 'modesto', 29, '28645835222H')]
+# Esto es para el ejercicio 3
+lista_personas = [Persona('Alan', 'Sweere', 24, '2222235222H'),Persona('Pepe', 'Modesto', 29, '28645835222H')]
 
-# pers = persona_1.pers() # esto es de antes del ejercicio 2
-pers = lista_personas[0].pers()
+pers = Persona('Alan', 'Sweere', 24, '2222235222H').datos()
+# pers = lista_personas[0].datos() # Esto es otra manera de crear el mismo objeto pero con la 'lista_personas'
 
 # Pruebas -----------------------------------------------------------------------------------
 
-#print(persona_1.pers()) # esto es de antes del ejercicio 2
 print(pers)
-
